@@ -1,0 +1,21 @@
+meta {
+  name: Get
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/APIFotoPessoa/fotoPessoa/6
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "pes_id": 1,
+    "fp_data": "2025-03-26",
+    "fp_bucket": "string",
+    "fp_hash": "string",
+    "fp_foto": "gxupload:ef24fa19112343f782ccadbc9fcccbb5"
+  }
+}

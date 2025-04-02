@@ -1,0 +1,21 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/lotacao/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pes_id": 100,
+    "unid_id": 1,
+    "lot_data_lotacao": "2025-03-22",
+    "lot_data_remocao": "2025-03-22",
+    "lot_portaria": "string2"
+  }
+}

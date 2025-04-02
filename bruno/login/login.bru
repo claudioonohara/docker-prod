@@ -1,0 +1,18 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/auth
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "admin",
+    "password": "123"
+  }
+}

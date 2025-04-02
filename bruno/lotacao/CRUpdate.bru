@@ -1,0 +1,32 @@
+meta {
+  name: CRUpdate
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/lotacao/2
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MzQ3MTM4NH0.mr2y7dssfvBIZMLBBiAknvZ-o9kbxXvWaUxDc7JMn1Y
+}
+
+body:json {
+  {
+    "SDTCRLotacao": {
+      "lot_data_lotacao": "2025-04-01",
+      "lot_data_remocao": "2025-04-01",
+      "lot_portaria": "stringdddddddddddd",
+      "pes_nome": "stringddddddddddddddd",
+      "pes_data_nascimento": "2025-04-01",
+      "pes_sexo": "strindddddddddddddg",
+      "pes_mae": "string",
+      "pes_pai": "stringd",
+      "unid_nome": "stringd",
+      "unid_sigla": "stringd"
+    }
+  }
+}

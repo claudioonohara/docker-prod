@@ -1,0 +1,19 @@
+meta {
+  name: Foto
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/APIFotoPessoa/gxobject
+  body: file
+  auth: inherit
+}
+
+body:multipart-form {
+  : @file(C:\Users\gx\Downloads\th.jpg)
+}
+
+body:file {
+  file: @file(C:\Users\gx\Downloads\th.jpg) @contentType(image/jpeg)
+}

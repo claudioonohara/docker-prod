@@ -1,0 +1,15 @@
+meta {
+  name: Get
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/unidade/8
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MzQ3MzI1OX0.Z2qWZKc1rRSMJgaj1ErUD0_DJHKxyrWhl_G9QO2nOIs
+}

@@ -1,0 +1,42 @@
+meta {
+  name: CRCreate
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/unidade
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MzM4NTAwMX0.vTD8ge98IEizTIU0QGP5lKda6QLyIofB6NvZ21FpwfU
+}
+
+body:json {
+  {
+    "unidadeRelacoes": {
+      "unid_nome": "string",
+      "unid_sigla": "string",
+      "endereco": [
+        {
+          "end_tipo_logradouro": "string",
+          "end_logradouro": "string",
+          "end_numero": 0,
+          "end_bairro": "string",
+          "cid_nome": "string",
+          "cid_uf": "mt"
+        },
+        {
+          "end_tipo_logradouro": "string",
+          "end_logradouro": "string",
+          "end_numero": 0,
+          "end_bairro": "string",
+          "cid_nome": "string",
+          "cid_uf": "sp"
+        }
+      ]
+    }
+  }
+}

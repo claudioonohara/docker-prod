@@ -1,0 +1,33 @@
+meta {
+  name: Create copy
+  type: http
+  seq: 3
+}
+
+post {
+  url: API HelloWorld
+   Description("Exemplo de API no GeneXus")
+
+   // Definição de um endpoint GET
+   Property(HttpMethod, "GET")
+
+   // URL do endpoint
+   Route("hello")
+
+   // Método do serviço
+   Procedure('HelloProcedure')
+http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/APIServidorEfetivo
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pes_nome": "string",
+    "pes_data_nascimento": "2025-03-21",
+    "pes_sexo": "string",
+    "pes_mae": "string",
+    "pes_pai": "string",
+    "se_matricula": "string"
+  }
+}

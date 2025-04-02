@@ -1,0 +1,22 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/servidorEfetivo
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pes_nome": "string",
+    "pes_data_nascimento": "2025-03-21",
+    "pes_sexo": "string",
+    "pes_mae": "string",
+    "pes_pai": "string",
+    "se_matricula": "string"
+  }
+}

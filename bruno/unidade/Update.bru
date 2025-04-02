@@ -1,0 +1,18 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/unidade/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "unid_nome": "string222222222",
+    "unid_sigla": "stringup"
+  }
+}

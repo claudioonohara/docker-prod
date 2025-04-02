@@ -1,0 +1,37 @@
+meta {
+  name: CRUpdate
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/unidade/8
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MzM4OTM2MH0.Ta5J5D_NxwH1uWh3WUXpauMrwqInkAiLckDV0_fBm3A
+}
+
+body:json {
+  {
+    "unidadeRelacoes": {
+      "endereco": [
+        {
+          "cid_id": "7",
+          "cid_nome": "stringdddd",
+          "cid_uf": "mt",
+          "end_bairro": "string",
+          "end_id": "6",
+          "end_logradouro": "string",
+          "end_numero": "0",
+          "end_tipo_logradouro": "string"
+        }
+      ],
+      "unid_id": "8",
+      "unid_nome": "stringdd",
+      "unid_sigla": "stringdd"
+    }
+  }
+}

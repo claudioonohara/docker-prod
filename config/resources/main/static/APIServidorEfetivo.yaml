@@ -1,0 +1,238 @@
+openapi: 3.0.0
+info:
+  title: "APIServidorEfetivo"
+  description: "APIServidor Efetivo"
+  version: "20250330185314"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/
+paths:
+  /servidorEfetivo:
+    post:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__post"
+      summary: "servidorEfetivo__post"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorEfetivo__postInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__postOutput"
+        404:
+          description: "Not found"
+
+  /servidorEfetivo/{pes_id}:
+    put:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__put"
+      summary: "servidorEfetivo__put"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+
+
+
+
+
+
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorEfetivo__putInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__putOutput"
+        404:
+          description: "Not found"
+
+
+    delete:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__delete"
+      summary: "servidorEfetivo__delete"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__deleteOutput"
+        404:
+          description: "Not found"
+
+    get:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__get"
+      summary: "servidorEfetivo__get"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__getOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    servidorEfetivo__postOutput:
+      properties:
+        servidorEfetivo:
+          description: "SDTServidor Efetivo"
+          $ref: "#/components/schemas/SDTServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorEfetivo__putOutput:
+      properties:
+        servidorEfetivo:
+          description: "SDTServidor Efetivo"
+          $ref: "#/components/schemas/SDTServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorEfetivo__deleteOutput:
+      properties:
+        servidorEfetivo:
+          description: "SDTServidor Efetivo"
+          $ref: "#/components/schemas/SDTServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorEfetivo__getOutput:
+      properties:
+        servidorEfetivo:
+          description: "SDTServidor Efetivo"
+          $ref: "#/components/schemas/SDTServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorEfetivo__postInput:  
+      properties:
+        pes_nome:
+          type: "string"
+        pes_data_nascimento:
+          type: "string"
+          format: "date"
+        pes_sexo:
+          type: "string"
+        pes_mae:
+          type: "string"
+        pes_pai:
+          type: "string"
+        se_matricula:
+          type: "string"
+
+    servidorEfetivo__putInput:  
+      properties:
+        pes_nome:
+          type: "string"
+        pes_data_nascimento:
+          type: "string"
+          format: "date"
+        pes_sexo:
+          type: "string"
+        pes_mae:
+          type: "string"
+        pes_pai:
+          type: "string"
+        se_matricula:
+          type: "string"
+
+
+  
+    SDTServidorEfetivo:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+
+
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+ 

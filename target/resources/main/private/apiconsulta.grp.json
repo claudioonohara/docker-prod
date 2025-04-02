@@ -1,0 +1,17 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIConsulta",
+"BasePath":"consulta",
+"Mappings":
+[
+{
+"Verb":"GET",
+"Name":"efetivosunidade",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_efetivosunidade",
+"Implementation":"PEfetivosUnidade",
+"PathRegexp":"efetivosunidade",
+"Path":"efetivosunidade"
+
+}]}

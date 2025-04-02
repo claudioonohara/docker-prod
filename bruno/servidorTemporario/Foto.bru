@@ -1,0 +1,19 @@
+meta {
+  name: Foto
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/APIServidorTemporario/gxobject
+  body: file
+  auth: inherit
+}
+
+headers {
+  accept: */*
+}
+
+body:file {
+  file: @file(C:\Users\gx\Downloads\th.jpg) @contentType(image/jpeg)
+}

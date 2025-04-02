@@ -1,0 +1,70 @@
+services:
+  app:
+    image: claudioonohara/springgx:local13
+    ports:
+      - "8080:8080"
+    environment:
+      - GX_DEFAULT_DB_URL=jdbc:postgresql://postgres_db_prod:5432/projetoPraticoDB
+      - GX_DEFAULT_USER_ID=postgres
+      - GX_DEFAULT_USER_PASSWORD=prod
+      - GX_STORAGE_PROVIDER=AMAZONS3V1
+      - GX_STORAGE_STORAGE_PROVIDER_ACCESSKEYID=admin123
+      - GX_STORAGE_STORAGE_PROVIDER_SECRETACCESSKEY=admin123
+      - GX_DEFAULT_BUCKET_NAME=foto
+      - GX_DEFAULT_FOLDER_NAME=Content
+      - GX_STORAGE_STORAGE_PROVIDER_DEFAULT_ACL=default
+      - GX_STORAGE_STORAGE_PROVIDER_DEFAULT_EXPIRATION=600
+      - GX_STORAGE_STORAGE_PROVIDER_REGION=us-east-1
+      - GX_STORAGE_STORAGE_ENDPOINT=custom
+      - GX_STORAGE_STORAGE_CUSTOM_ENDPOINT=http://minio_storage_prod:9000
+      - GX_CORS_ALLOW_ORIGIN=http://foo.example.com
+      - GX_TMPMEDIA_DIR=app/a/PrivateTempStorage
+      - GX_CS_BLOB_PATH=app/a/PublicTempStorage
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config   
+    depends_on:
+      - postgres
+      - minio_storage_prod
+    networks:
+      - app-network-prod
+
+  postgres:
+    image: postgres:17.4-alpine
+    container_name: postgres_db_prod
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=prod
+      - POSTGRES_DB=projetoPraticoDB
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+      - ./postgres-config/pg_hba.conf:/etc/postgresql/pg_hba.conf:ro
+    networks:
+      - app-network-prod
+
+  minio_storage_prod:
+    image: minio/minio
+    container_name: minio_storage_prod
+    environment:
+      MINIO_ROOT_USER: admin123
+      MINIO_ROOT_PASSWORD: admin123
+      MINIO_ADDRESS: ":9000"
+      MINIO_CONSOLE_ADDRESS: ":9001"
+      MINIO_BROWSER_REDIRECT_URL: "http://0.0.0.0:9001"
+    ports:
+      - "0.0.0.0:9000:9000"
+      - "0.0.0.0:9001:9001"
+    command: server /data --console-address ":9001" --address ":9000"
+    volumes:
+      - minio_data:/data
+    networks:
+      - app-network-prod
+
+networks:
+  app-network-prod:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  minio_data:

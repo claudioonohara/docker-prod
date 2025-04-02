@@ -1,0 +1,217 @@
+openapi: 3.0.0
+info:
+  title: "APIServidorTemporarioCopy1"
+  description: "APIServidor Temporario Copy1"
+  version: "20250322135609"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/
+paths:
+  /servidorTemporario:
+    post:
+      tags:
+        - APIServidorTemporarioCopy1  
+      operationId: "APIServidorTemporarioCopy1.servidorTemporario__post"
+      summary: "servidorTemporario__post"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorTemporario__postInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorTemporario__postOutput"
+        404:
+          description: "Not found"
+
+  /servidorTemporario/{pes_id}:
+    put:
+      tags:
+        - APIServidorTemporarioCopy1  
+      operationId: "APIServidorTemporarioCopy1.servidorTemporario__put"
+      summary: "servidorTemporario__put"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+
+
+
+
+
+
+
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorTemporario__putInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorTemporario__putOutput"
+        404:
+          description: "Not found"
+
+
+    get:
+      tags:
+        - APIServidorTemporarioCopy1  
+      operationId: "APIServidorTemporarioCopy1.servidorTemporario__get"
+      summary: "servidorTemporario__get"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorTemporario__getOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    servidorTemporario__postOutput:
+      properties:
+        servidorTemporario:
+          description: "SDTServidor Temporario"
+          $ref: "#/components/schemas/SDTServidorTemporario"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorTemporario__putOutput:
+      properties:
+        servidorTemporario:
+          description: "SDTServidor Temporario"
+          $ref: "#/components/schemas/SDTServidorTemporario"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorTemporario__getOutput:
+      properties:
+        servidorTemporario:
+          description: "SDTServidor Temporario"
+          $ref: "#/components/schemas/SDTServidorTemporario"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorTemporario__postInput:  
+      properties:
+        pes_nome:
+          type: "string"
+        pes_data_nascimento:
+          type: "string"
+          format: "date"
+        pes_sexo:
+          type: "string"
+        pes_mae:
+          type: "string"
+        pes_pai:
+          type: "string"
+        st_data_admissao:
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          type: "string"
+          format: "date"
+
+    servidorTemporario__putInput:  
+      properties:
+        pes_nome:
+          type: "string"
+        pes_data_nascimento:
+          type: "string"
+          format: "date"
+        pes_sexo:
+          type: "string"
+        pes_mae:
+          type: "string"
+        pes_pai:
+          type: "string"
+        st_data_admissao:
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          type: "string"
+          format: "date"
+
+  
+    SDTServidorTemporario:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        st_data_admissao:
+          description: "st_data_admissao"
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          description: "st_data_demissao"
+          type: "string"
+          format: "date"
+
+
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+ 

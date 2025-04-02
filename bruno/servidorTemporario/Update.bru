@@ -1,0 +1,23 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/servidorTemporario/32
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pes_nome": "string222222222",
+    "pes_data_nascimento": "2025-03-21",
+    "pes_sexo": "string",
+    "pes_mae": "string",
+    "pes_pai": "string",
+    "st_data_admissao": "2025-03-25",
+    "st_data_demissao": "2025-03-25"
+  }
+}

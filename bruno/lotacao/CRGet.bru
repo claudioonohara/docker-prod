@@ -1,0 +1,15 @@
+meta {
+  name: CRGet
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/lotacao/2
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MzQ3MzI1OX0.Z2qWZKc1rRSMJgaj1ErUD0_DJHKxyrWhl_G9QO2nOIs
+}

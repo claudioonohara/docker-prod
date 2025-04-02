@@ -1,0 +1,37 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIFotoPessoa",
+"BasePath":"APIFotoPessoa",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"fotopessoa__post",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_fotopessoa__post",
+"Implementation":"PFotoPessoaPost",
+"PathRegexp":"fotopessoa",
+"Path":"fotopessoa"
+
+},
+{
+"Verb":"GET",
+"PathRegexp":"fotoPessoa/([^/]+)",
+"Path":"fotoPessoa/{fp_id}",
+"Name":"fotopessoa__get",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_fotopessoa__get",
+"Implementation":"PFotoPessoaGet"
+},
+{
+"Name":"gxobject",
+"Verb":"POST",
+"Bodystyle":"Wrapped",
+"ServiceMethod":"gxobject",
+"VariableAlias": [],
+"Implementation":"gxobject",
+"PathRegexp":"gxobject",
+"Path":"gxobject"
+}]}

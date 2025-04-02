@@ -1,0 +1,130 @@
+openapi: 3.0.0
+info:
+  title: "APIConsulta"
+  description: "APIConsulta"
+  version: "20250330185314"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/consulta
+paths:
+  /efetivosUnidade:
+    get:
+      tags:
+        - APIConsulta  
+      operationId: "APIConsulta.efetivosUnidade"
+      summary: "efetivosUnidade"
+      parameters:
+        - name: "Unid_Id"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "Paginainput"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "Itensporpaginainput"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/efetivosUnidadeOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    efetivosUnidadeOutput:
+      properties:
+        SDTEfetivosUnidade:
+          description: "SDTEfetivos Unidade"
+          $ref: "#/components/schemas/SDTEfetivosUnidade"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+  
+    SDTEfetivosUnidade:
+      properties:
+        Pagina:
+          description: "Pagina"
+          type: "integer"
+          format: "int64"
+        ItensPorPagina:
+          description: "Itens Por Pagina"
+          type: "integer"
+          format: "int64"
+        TotalItens:
+          description: "Total Itens"
+          type: "integer"
+          format: "int64"
+        TotalPaginas:
+          description: "Total Paginas"
+          type: "integer"
+          format: "int64"
+
+        efetivosUnidade:
+          type: array
+          items:
+            description: efetivosUnidadeItem
+            $ref: "#/components/schemas/SDTEfetivosUnidade.efetivosUnidade_efetivosUnidadeItem"
+
+
+    SDTEfetivosUnidade.efetivosUnidade_efetivosUnidadeItem:
+      properties:
+        nome:
+          description: "pes_nome"
+          type: "string"
+        idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+        unidadeDeLotacao:
+          description: "unid_nome"
+          type: "string"
+
+        fotografias:
+          type: array
+          items:
+            description: fotografiasItem
+            $ref: "#/components/schemas/SDTEfetivosUnidade.efetivosUnidade.fotografias_fotografiasItem"
+
+      x-gx-level: "SDTEfetivosUnidade"
+
+    SDTEfetivosUnidade.efetivosUnidade.fotografias_fotografiasItem:
+      properties:
+        fotografia:
+          description: "fp_bucket"
+          type: "string"
+
+
+      x-gx-level: "SDTEfetivosUnidade.efetivosUnidade"
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+ 

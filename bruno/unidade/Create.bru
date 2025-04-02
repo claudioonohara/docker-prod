@@ -1,0 +1,22 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/unidade
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MjczOTczNH0.l53eoq0qgcey9pY-ull8pvSQq5pUxe05-uARn3y_eBA
+}
+
+body:json {
+  {
+    "unid_nome": "string",
+    "unid_sigla": "string"
+  }
+}

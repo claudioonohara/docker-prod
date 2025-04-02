@@ -1,0 +1,57 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIUnidade",
+"BasePath":"",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"unidade__post",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_unidade__post",
+"Implementation":"PCRUnidadePost",
+"PathRegexp":"unidade",
+"Path":"unidade"
+
+},
+{
+"Verb":"PUT",
+"PathRegexp":"unidade/([^/]+)",
+"Path":"unidade/{unid_id}",
+"Name":"unidade__put",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_unidade__put",
+"Implementation":"PUnidadePut"
+},
+{
+"Verb":"GET",
+"PathRegexp":"unidade/([^/]+)",
+"Path":"unidade/{unid_id}",
+"Name":"unidade__get",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_unidade__get",
+"Implementation":"PUnidadeGet"
+},
+{
+"Verb":"DELETE",
+"PathRegexp":"unidade/([^/]+)",
+"Path":"unidade/{unid_id}",
+"Name":"unidade__delete",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_unidade__delete",
+"Implementation":"PUnidadeDelete"
+},
+{
+"Verb":"GET",
+"PathRegexp":"unidades/([^/]+)/([^/]+)",
+"Path":"unidades/{pagina}/{itensporpagina}",
+"Name":"unidades",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_unidades",
+"Implementation":"PUnidadeList"
+}]}

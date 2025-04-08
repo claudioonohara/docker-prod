@@ -1,0 +1,287 @@
+openapi: 3.0.0
+info:
+  title: "APIConsulta"
+  description: "APIConsulta"
+  version: "20250408191435"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/consulta
+paths:
+  /efetivosUnidade:
+    get:
+      tags:
+        - APIConsulta  
+      operationId: "APIConsulta.efetivosUnidade"
+      summary: "efetivosUnidade"
+      parameters:
+        - name: "Unidid"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int32"
+        - name: "Paginaatual"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "Nroporpagina"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/efetivosUnidadeOutput"
+        404:
+          description: "Not found"
+
+  /enderecoFuncional:
+    get:
+      tags:
+        - APIConsulta  
+      operationId: "APIConsulta.enderecoFuncional"
+      summary: "enderecoFuncional"
+      parameters:
+        - name: "Pes_Nome"
+          in: "query"
+          required: false
+          schema:
+            type: "string"
+            
+        - name: "Paginaatual"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "Nroporpagina"
+          in: "query"
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/enderecoFuncionalOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    efetivosUnidadeOutput:
+      properties:
+        SDTEfetivosUnidade:
+          description: "SDTEfetivos Unidade"
+          $ref: "#/components/schemas/SDTEfetivosUnidade"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    enderecoFuncionalOutput:
+      properties:
+        SDTServidorEfetivoEnderecoFuncional:
+          description: "SDTServidor Efetivo Endereco Funcional"
+          $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+  
+    SDTEfetivosUnidade:
+      properties:
+        PaginaAtual:
+          description: "Pagina Atual"
+          type: "integer"
+          format: "int64"
+        NroPorPagina:
+          description: "Nro Por Pagina"
+          type: "integer"
+          format: "int64"
+        TotalItens:
+          description: "Total Itens"
+          type: "integer"
+          format: "int64"
+        TotalPaginas:
+          description: "Total Paginas"
+          type: "integer"
+          format: "int64"
+
+        efetivosUnidade:
+          type: array
+          items:
+            description: efetivosUnidadeItem
+            $ref: "#/components/schemas/SDTEfetivosUnidade.efetivosUnidade_efetivosUnidadeItem"
+
+
+    SDTEfetivosUnidade.efetivosUnidade_efetivosUnidadeItem:
+      properties:
+        nome:
+          description: "pes_nome"
+          type: "string"
+        idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+        unidadeDeLotacao:
+          description: "unid_nome"
+          type: "string"
+
+        fotografias:
+          type: array
+          items:
+            description: fotografiasItem
+            $ref: "#/components/schemas/SDTEfetivosUnidade.efetivosUnidade.fotografias_fotografiasItem"
+
+      x-gx-level: "SDTEfetivosUnidade"
+
+    SDTEfetivosUnidade.efetivosUnidade.fotografias_fotografiasItem:
+      properties:
+        fotografia:
+          description: "fotografia"
+          type: "string"
+
+
+      x-gx-level: "SDTEfetivosUnidade.efetivosUnidade"
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+    SDTServidorEfetivoEnderecoFuncional:
+      properties:
+        PaginaAtual:
+          description: "Pagina Atual"
+          type: "integer"
+          format: "int64"
+        TotalPaginas:
+          description: "Total Paginas"
+          type: "integer"
+          format: "int64"
+        TotalItens:
+          description: "Total Itens"
+          type: "integer"
+          format: "int64"
+        NroPorPagina:
+          description: "Nro Por Pagina"
+          type: "integer"
+          format: "int64"
+
+        servidor:
+          type: array
+          items:
+            description: servidorItem
+            $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional.servidor_servidorItem"
+
+
+    SDTServidorEfetivoEnderecoFuncional.servidor_servidorItem:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+
+        lotacao:
+          type: array
+          items:
+            description: lotacaoItem
+            $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional.servidor.lotacao_lotacaoItem"
+
+      x-gx-level: "SDTServidorEfetivoEnderecoFuncional"
+
+    SDTServidorEfetivoEnderecoFuncional.servidor.lotacao_lotacaoItem:
+      properties:
+        lot_id:
+          description: "lot_id"
+          type: "integer"
+          format: "int64"
+        lot_data_lotacao:
+          description: "lot_data_lotacao"
+          type: "string"
+          format: "date"
+        lot_data_remocao:
+          description: "lot_data_remocao"
+          type: "string"
+          format: "date"
+        unid_id:
+          description: "unid_id"
+          type: "integer"
+          format: "int64"
+        unid_nome:
+          description: "unid_nome"
+          type: "string"
+        unid_sigla:
+          description: "unid_sigla"
+          type: "string"
+
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional.servidor.lotacao.endereco_enderecoItem"
+
+      x-gx-level: "SDTServidorEfetivoEnderecoFuncional.servidor"
+
+    SDTServidorEfetivoEnderecoFuncional.servidor.lotacao.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+
+
+      x-gx-level: "SDTServidorEfetivoEnderecoFuncional.servidor.lotacao"
+
+ 

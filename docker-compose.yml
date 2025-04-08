@@ -1,31 +1,31 @@
 services:
   app:
-    image: claudioonohara/springgx:local13
+    image: claudioonohara/springgx:local34
     ports:
       - "8080:8080"
     environment:
       - GX_DEFAULT_DB_URL=jdbc:postgresql://postgres_db_prod:5432/projetoPraticoDB
       - GX_DEFAULT_USER_ID=postgres
       - GX_DEFAULT_USER_PASSWORD=prod
-      - GX_STORAGE_PROVIDER=AMAZONS3V1
-      - GX_STORAGE_STORAGE_PROVIDER_ACCESSKEYID=admin123
-      - GX_STORAGE_STORAGE_PROVIDER_SECRETACCESSKEY=admin123
-      - GX_DEFAULT_BUCKET_NAME=foto
+      - GX_STORAGE_STORAGE_PROVIDER_ACCESSKEYID=YvFqmqSede+RgA57SJwZ/w==
+      - GX_STORAGE_STORAGE_PROVIDER_SECRETACCESSKEY=YvFqmqSede+RgA57SJwZ/w==
+      - GX_STORAGE_BUCKET_NAME=NEQl/9xN3VS9LKwVxbH3VQ==
       - GX_DEFAULT_FOLDER_NAME=Content
       - GX_STORAGE_STORAGE_PROVIDER_DEFAULT_ACL=default
       - GX_STORAGE_STORAGE_PROVIDER_DEFAULT_EXPIRATION=600
-      - GX_STORAGE_STORAGE_PROVIDER_REGION=us-east-1
+      - GX_STORAGE_PROVIDER_REGION=us-east-1
       - GX_STORAGE_STORAGE_ENDPOINT=custom
-      - GX_STORAGE_STORAGE_CUSTOM_ENDPOINT=http://minio_storage_prod:9000
-      - GX_CORS_ALLOW_ORIGIN=http://foo.example.com
-      - GX_TMPMEDIA_DIR=app/a/PrivateTempStorage
-      - GX_CS_BLOB_PATH=app/a/PublicTempStorage
+      - GX_STORAGE_STORAGE_CUSTOM_ENDPOINT=http://minioprod:9000
+      - GX_CORS_ALLOW_ORIGIN=http://foo.example
+      - GX_TMPMEDIA_DIR=app/PrivateTempStorage
+      - GX_CS_BLOB_PATH=app/PublicTempStorage
     volumes:
-      - ./logs:/app/logs
-      - ./config:/app/config   
+      - ./buildexec/PrivateTempStorage:/app/PrivateTempStorage    
+      - ./buildexec/PublicTempStorage:/app/PublicTempStorage    
+      - ./buildexec/logs:/app/logs    
     depends_on:
       - postgres
-      - minio_storage_prod
+      - minioprod
     networks:
       - app-network-prod
 
@@ -43,9 +43,9 @@ services:
     networks:
       - app-network-prod
 
-  minio_storage_prod:
+  minioprod:
     image: minio/minio
-    container_name: minio_storage_prod
+    container_name: minioprod
     environment:
       MINIO_ROOT_USER: admin123
       MINIO_ROOT_PASSWORD: admin123

@@ -1,4 +1,0 @@
-<div class="switch-container" tabindex="0">
-    <input type="checkbox" role="switch" data-gx-binding="checked" {{^Enabled}}disabled{{/Enabled}} />
-    <label></label>
-</div>

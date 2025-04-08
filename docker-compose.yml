@@ -58,8 +58,29 @@ services:
     command: server /data --console-address ":9001" --address ":9000"
     volumes:
       - minio_data:/data
+      - ./scripts:/scripts
     networks:
       - app-network-prod
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  createbuckets:
+    image: minio/mc
+    depends_on:
+      - minioprod
+    environment:
+      MINIO_ROOT_USER: admin123
+      MINIO_ROOT_PASSWORD: admin123
+    entrypoint: >
+      /bin/sh -c "
+      until (mc config host add myminio http://minioprod:9000 admin123 admin123) do echo '...waiting...' && sleep 1; done;
+      mc mb myminio/foto;
+      mc policy set public myminio/foto;
+      exit 0;
+      "
 
 networks:
   app-network-prod:

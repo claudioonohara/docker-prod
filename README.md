@@ -49,7 +49,7 @@ B. A solução de autenticação deverá expirar a cada 5 minutos e oferecer a p
 
 - [x] Mecanismo de renovação de token
       - Ao realizar o login, sao retornados 2 tokens, um token para fazer requisicoes as diversas rotas que checam autorizacao(possui validade
-      de 5 minutos) , e refreshToken (possui validade de 2 horas) que pode ser somente para solicitar novo token através da rota 
+      de 5 minutos) , e refreshToken (possui validade de 2 horas) que pode ser usado somente para solicitar novo token. [`(Clique para ver: Requisicao Refresh Token)`](./requisicoes/refreshToken.curl)
 
 C. Implementar pelo menos os verbos post, put, get;
    - [ ] pessoa

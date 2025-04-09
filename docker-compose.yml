@@ -12,7 +12,7 @@ services:
       - ./requisicoes:/requisicoes
 
   app:
-    image: claudioonohara/springgx:local36
+    image: claudioonohara/springgx:latest
     container_name: appgx
     ports:
       - "8080:8080"
@@ -29,9 +29,7 @@ services:
       - GX_STORAGE_PROVIDER_REGION=us-east-1
       - GX_STORAGE_STORAGE_ENDPOINT=custom
       - GX_STORAGE_STORAGE_CUSTOM_ENDPOINT=http://minioprod:9000
-      - GX_CORS_ALLOW_ORIGIN=*
-      - GX_CORS_ALLOW_METHODS=GET,POST,PUT,DELETE,OPTIONS
-      - GX_CORS_ALLOW_HEADERS=*
+      - GX_CORS_ALLOW_ORIGIN=http://foo.example
       - GX_CORS_ALLOW_CREDENTIALS=true
       - GX_TMPMEDIA_DIR=app/PrivateTempStorage
       - GX_CS_BLOB_PATH=app/PublicTempStorage

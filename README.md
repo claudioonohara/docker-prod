@@ -53,10 +53,11 @@ B. A solução de autenticação deverá expirar a cada 5 minutos e oferecer a p
 
 C. Implementar pelo menos os verbos post, put, get;
    - [x] Implementação de CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação
-      - Foram criados endpoints para inclusão, edição, exclusão e consulta dos dados das tabelas relacionadas, conforme especificado no item [1.2.1 Requisitos Específicos](#121-requisitos-específicos).
+      - Foram criados endpoints para inclusão, edição, exclusão e consulta dos dados das tabelas relacionadas, conforme especificado no item [1.2.1 A](#a-criar-um-crud-para-servidor-efetivo-servidor-temporário-unidade-e-lotação-deverá-ser-contemplado-a-inclusão-e-edição-dos-dados-das-tabelas-relacionadas).
 
 D. Conter recursos de paginação em todas as consultas;
-   - [ ] Paginação em todas consultas
+   - [x] Paginação em todas consultas  
+      - Implementada paginação no endpoint descrito no item [1.2.1 B](#b-criar-um-endpoint-que-permita-consultar-os-servidores-efetivos-lotados-em-determinada-unidade-parametrizando-a-consulta-pelo-atributo-unid_id-retornar-os-seguintes-campos-nome-idade-unidade-de-lotação-e-fotografia), permitindo limitar e paginar os resultados retornados.
 
 E. Os dados produzidos deverão ser armazenados no servidor de banco de dados previamente criado em container;
    - [x] Persistência em PostgreSQL do container

@@ -8,6 +8,6 @@ COPY build/CloudServices.config /app/CloudServices.config
 COPY build/GeneXus.services /app/GeneXus.services
 COPY build/web.jar /app/web.jar
 
-EXPOSE 8085
+EXPOSE 8080
 
-ENTRYPOINT ["java", "-Dfile.encoding=UTF-8","-jar", "web.jar","--server.port=8085"]
+ENTRYPOINT ["java", "-Dfile.encoding=UTF-8","-jar", "web.jar"]

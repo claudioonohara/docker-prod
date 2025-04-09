@@ -1,0 +1,8 @@
+curl -X 'POST' \
+  'http://localhost:8085/ProjetoPraticoJavaPostgreSQL/auth' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "username": "guest",
+  "password": "321"
+}'

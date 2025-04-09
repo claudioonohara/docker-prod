@@ -1,25 +1,21 @@
 services:
 
-  swagger-ui:
-    image: swaggerapi/swagger-ui:latest
-    container_name: swagger_ui
-    environment:
-      - BASE_URL=/swagger
-      - SWAGGER_JSON=/swagger/APIAuth.yaml
-    ports:
-      - "8081:8080"
-    volumes:
-      - ./swagger:/swagger
+  curl-client:
+    image: curlimages/curl:latest
+    container_name: curl_client
     networks:
       - app-network-prod
     depends_on:
       - app
+    entrypoint: ["tail", "-f", "/dev/null"] 
+    volumes:
+      - ./requisicoes:/requisicoes
 
   app:
     image: claudioonohara/springgx:local36
     container_name: appgx
     ports:
-      - "8085:8085"
+      - "8080:8080"
     environment:
       - GX_DEFAULT_DB_URL=jdbc:postgresql://postgres_db_prod:5432/projetoPraticoDB
       - GX_DEFAULT_USER_ID=postgres

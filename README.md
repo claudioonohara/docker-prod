@@ -52,9 +52,8 @@ B. A solução de autenticação deverá expirar a cada 5 minutos e oferecer a p
       de 5 minutos) , e refreshToken (possui validade de 2 horas) que pode ser usado somente para solicitar novo token. [`(Clique para ver: Requisicao Refresh Token)`](./requisicoes/refreshToken.curl)
 
 C. Implementar pelo menos os verbos post, put, get;
-   - [ ] pessoa
-   - [ ] endereco
-   - [ ] cidade
+   - [x] Implementação de CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação
+      - Foram criados endpoints para inclusão, edição, exclusão e consulta dos dados das tabelas relacionadas, conforme especificado no item [1.2.1 Requisitos Específicos](#121-requisitos-específicos).
 
 D. Conter recursos de paginação em todas as consultas;
    - [ ] Paginação em todas consultas
@@ -69,28 +68,28 @@ F. Orquestrar a solução final utilizando Docker Compose de modo que inclua tod
 
 Implementar uma API Rest para o diagrama de banco de dados acima tomando por base as seguintes orientações:
 
-A. Criar um CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação. Deverá ser contemplado a inclusão e edição dos dados das tabelas relacionadas;
-- [ ] Servidor Efetivo
-- [ ] Servidor Temporário
-- [ ] Unidade
-- [ ] Lotação
+### A. Criar um CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação. Deverá ser contemplado a inclusão e edição dos dados das tabelas relacionadas;
+- [x] Servidor Efetivo
+- [x] Servidor Temporário
+- [x] Unidade
+- [x] Lotação
 
-B. Criar um endpoint que permita consultar os servidores efetivos lotados em determinada unidade parametrizando a consulta pelo atributo unid_id; Retornar os seguintes campos: Nome, idade, unidade de lotação e fotografia;
+### B. Criar um endpoint que permita consultar os servidores efetivos lotados em determinada unidade parametrizando a consulta pelo atributo unid_id; Retornar os seguintes campos: Nome, idade, unidade de lotação e fotografia;
 - [x] Endpoint para consulta por unid_id
 - [x] Retorno com Nome, Idade, Unidade de lotação e  Fotografia
 
-C. Criar um endpoint que permita consultar o endereço funcional (da unidade onde o servidor é lotado) a partir de uma parte do nome do servidor efetivo. 
-- [ ] Consulta por parte do nome do servidor
-- [ ] Retorna endereço da unidade onde o servidor é lotado
+### C. Criar um endpoint que permita consultar o endereço funcional (da unidade onde o servidor é lotado) a partir de uma parte do nome do servidor efetivo. 
+- [x] Consulta por parte do nome do servidor
+- [x] Retorna endereço da unidade onde o servidor é lotado
 
-D. Realizar o upload de uma ou mais fotografias enviando-as para o Min.IO. A recuperação das imagens deverá ser através de links temporários gerados pela biblioteca do Min.IO com tempo de expiração de 5 minutos.
+### D. Realizar o upload de uma ou mais fotografias enviando-as para o Min.IO. A recuperação das imagens deverá ser através de links temporários gerados pela biblioteca do Min.IO com tempo de expiração de 5 minutos.
 - [x] Upload para MinIO
 - [x] Links temporários (5 min)
 
 
 ## 1.3 Instruções de Entrega
 Instruções:
-A. O projeto deverá estar disponível no Github. 
+### A. O projeto deverá estar disponível no Github. 
  - Crie um arquivo README.md contendo seus dados de inscrição bem como orientações de como executar e testar a solução apresentada.
       - [x] Dados de inscricao: 
          - [Dados de inscricao aqui]

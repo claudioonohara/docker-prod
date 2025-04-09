@@ -1,0 +1,174 @@
+openapi: 3.0.0
+info:
+  title: "APIFotoPessoa"
+  description: "APIFoto Pessoa"
+  version: "20250408191435"
+servers:
+  - url: http://app:8080/ProjetoPraticoJavaPostgreSQL/APIFotoPessoa
+paths:
+  /gxobject:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - APIFotoPessoa
+      operationId: "UploadAPIFotoPessoa"
+      summary: "Upload a binary file"
+      requestBody:
+        required: true
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+              description: "Binary file content"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    description: "URL of uploaded file"
+        400:
+          description: "Bad request"
+        500:
+          description: "Internal Server Error"
+
+  /fotoPessoa:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - APIFotoPessoa  
+      operationId: "APIFotoPessoa.fotoPessoa__post"
+      summary: "fotoPessoa__post"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/fotoPessoa__postInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/fotoPessoa__postOutput"
+        404:
+          description: "Not found"
+
+  /fotoPessoa/{fp_id}:
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - APIFotoPessoa  
+      operationId: "APIFotoPessoa.fotoPessoa__get"
+      summary: "fotoPessoa__get"
+      parameters:
+        - name: "fp_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/fotoPessoa__getOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    fotoPessoa__postOutput:
+      properties:
+        SDTFotoPessoa:
+          description: "SDTFoto Pessoa"
+          $ref: "#/components/schemas/SDTFotoPessoa"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    fotoPessoa__getOutput:
+      properties:
+        fotoPessoa:
+          description: "SDTFoto Pessoa"
+          $ref: "#/components/schemas/SDTFotoPessoa"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    fotoPessoa__postInput:  
+      properties:
+        pes_id:
+          type: "integer"
+          format: "int64"
+        fp_data:
+          type: "string"
+          format: "date"
+        fp_foto:
+          type: "string"
+
+  
+    SDTFotoPessoa:
+      properties:
+        fp_id:
+          description: "fp_id"
+          type: "integer"
+          format: "int64"
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        fp_data:
+          description: "fp_data"
+          type: "string"
+          format: "date"
+        fp_bucket:
+          description: "fp_bucket"
+          type: "string"
+        fp_hash:
+          description: "fp_hash"
+          type: "string"
+        fp_foto_link:
+          description: "fp_foto_link"
+          type: "string"
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: "Enter your Bearer token (JWT)"
+
+security:
+  - bearerAuth: []
+
+
+
+

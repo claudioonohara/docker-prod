@@ -30,8 +30,8 @@ A. Implementar mecanismo de autorização e autenticação, bem como não permit
          - Quando se autenticam recebem um token e um refreshToken, ok tokens carregam o perfil de cada usuario,
          sendo o perfil do admin autorizado a executar acoes CREATE,UPDATE,GET e DELETE e 
          o perfil do guest autorizado apenas a acao GET. O refreshToken gera um novo token de acordo com o perfil que carrega. 
-         - Rota do Login: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/auth
-         - Rota do Refresh Token: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/refresh
+         - Rota do Login: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/auth
+         - Rota do Refresh Token: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/refresh
     [x] Restrição de acesso por domínio
          - Foi realizado controle de acesso por dominio, utilizando [(CORS)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/CORS). A variável de ambiente "GX_CORS_ALLOW_ORIGIN" , da aplicacao qual dominio deve ser permitido. O dominio é validado com informacao de "Origin" do header da requisicao. Caso uma requesicao seja feita com "Origin" nao permitida será retornado http status code 403.
 

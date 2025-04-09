@@ -1,0 +1,9 @@
+{
+    "urls": [
+      { "url": "/swagger/APIAuth.yaml", "name": "Auth API" },
+      { "url": "/swagger/APIConsulta.yaml", "name": "Consulta API" },
+      { "url": "/swagger/APIFotoPessoa.yaml", "name": "Foto Pessoa API" },
+      { "url": "/swagger/APILotacao.yaml", "name": "Lotacao API" }
+    ],
+    "urls.primaryName": "Auth API"
+  }

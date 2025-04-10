@@ -24,7 +24,7 @@ A. Antes de iniciar a realização do teste prático realize a leitura deste doc
    - [x] Leitura do documento
 
 B. Utilizar linguagem de programação de acordo com o cargo escolhido; Executar em container um servidor Min.io para armazenamento de objetos S3 (https://min.io/);
-   - [x] Genexus (Versao utilizada: Genexus 18 | Update 10 | Propriedada Java Framework: Spring boot | Java 21)
+   - [x] Genexus (Versao utilizada: Genexus 18 | Update 10 | Propriedada Java Framework: Spring boot | Java 21 Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64)  Edição: Express Edition (64-bit))
    - [x] MinIO para storage S3 [(link)](https://min.io/)
 
 C. Executar em container um servidor de banco de dados PostgreSQL em sua última versão.

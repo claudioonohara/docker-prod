@@ -1,0 +1,3 @@
+curl -X 'DELETE' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/lotacao/1' \
+  -H 'accept: application/json'

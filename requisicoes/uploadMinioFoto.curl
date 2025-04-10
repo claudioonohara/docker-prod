@@ -1,0 +1,8 @@
+curl -X 'POST' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/rest/PFotoPessoa' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "pes_id": 0,
+  "foto": "string"
+}'

@@ -1,0 +1,3 @@
+curl -X 'GET' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/consulta/efetivosUnidade?Unidid=1&Paginaatual=1&Nroporpagina=3' \
+  -H 'accept: application/json'

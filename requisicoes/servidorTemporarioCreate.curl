@@ -1,0 +1,28 @@
+curl -X 'POST' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/servidorTemporario' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "SDTCRServidorTemporario": {
+    "pes_id": 0,
+    "st_data_admissao": "2025-04-09",
+    "st_data_demissao": "2025-04-09",
+    "pes_nome": "string",
+    "pes_data_nascimento": "2025-04-09",
+    "pes_sexo": "string",
+    "pes_mae": "string",
+    "pes_pai": "string",
+    "endereco": [
+      {
+        "end_id": 0,
+        "end_tipo_logradouro": "string",
+        "end_logradouro": "string",
+        "end_numero": 0,
+        "end_bairro": "string",
+        "cid_id": 0,
+        "cid_nome": "string",
+        "cid_uf": "string"
+      }
+    ]
+  }
+}'

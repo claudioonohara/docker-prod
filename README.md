@@ -71,21 +71,39 @@ Implementar uma API Rest para o diagrama de banco de dados acima tomando por bas
 
 ### A. Criar um CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação. Deverá ser contemplado a inclusão e edição dos dados das tabelas relacionadas;
 - [x] Servidor Efetivo
+      - Servidor Efetivo é identificado pelo pes_id e se_matricula, esses atributos sao utilziados nas acoes de buscar, deletar e autalizar
+      como parametros da url 
+      - Criar um servidor efetivo com suas tabelas relacionadas: [`ServidorEfetivoCreate.curl`](./requisicoes/ServidorEfetivoCreate.curl) .
+      - Atualizar um servidor efetivo com suas tabelas relacionadas: [`ServidorEfetivoUpdate.curl`](./requisicoes/ServidorEfetivoUpdate.curl) .
+      - Deletar um servidor efetivo com suas tabelas relacionadas: [`ServidorEfetivoDelete.curl`](./requisicoes/ServidorEfetivoDelete.curl) .
+      - Buscar um servidor efetivo com suas tabelas relacionadas: [`ServidorEfetivoGet.curl`](./requisicoes/ServidorEfetivoGet.curl) .
 - [x] Servidor Temporário
+      - Servidor Temporario é identificado pelo pes_id, st_data_admissao e st_data_demissao , esses atributos sao utilziados nas acoes de buscar, deletar e autalizar  como parametros da url 
+      - Criar um servidor temporario com suas tabelas relacionadas: [`ServidorTemporarioCreate.curl`](./requisicoes/ServidorTemporarioCreate.curl) .
+      - Atualizar um servidor temporario com suas tabelas relacionadas: [`ServidorTemporarioUpdate.curl`](./requisicoes/ServidorTemporarioUpdate.curl) .
+      - Deletar um servidor temporario com suas tabelas relacionadas: [`ServidorTemporarioDelete.curl`](./requisicoes/ServidorTemporarioDelete.curl) .
+      - Buscar um servidor temporario com suas tabelas relacionadas: [`ServidorTemporarioGet.curl`](./requisicoes/ServidorTemporarioGet.curl) .
 - [x] Unidade
+      - A unidade é identificada pela unid_id esse atributo é utilziados nas acoes de buscar, deletar e autalizar  como parametro da url 
+      - Criar uma unidade com suas tabelas relacionadas: [`UnidadeCreate.curl`](./requisicoes/UnidadeCreate.curl) .
+      - Atualizar uma unidade com suas tabelas relacionadas: [`UnidadeUpdate.curl`](./requisicoes/UnidadeUpdate.curl) .
+      - Deletar uma unidade com suas tabelas relacionadas: [`UnidadeDelete.curl`](./requisicoes/UnidadeDelete.curl) .
+      - Buscar uma unidade com suas tabelas relacionadas: [`UnidadeGet.curl`](./requisicoes/UnidadeGet.curl) .
 - [x] Lotação
+      - A lotacao é identificada pela lot_id esse atributo é utilziados nas acoes de buscar, deletar e autalizar  como parametro da url 
+      - Criar uma lotacao com suas tabelas relacionadas: [`lotacaoCreate.curl`](./requisicoes/lotacaoCreate.curl) .
+      - Atualizar uma lotacao com suas tabelas relacionadas: [`lotacaoUpdate.curl`](./requisicoes/lotacaoUpdate.curl) .
+      - Deletar uma lotacao com suas tabelas relacionadas: [`lotacaoDelete.curl`](./requisicoes/lotacaoDelete.curl) .
+      - Buscar uma lotacao com suas tabelas relacionadas: [`lotacaoGet.curl`](./requisicoes/lotacaoGet.curl) .
 
 ### B. Criar um endpoint que permita consultar os servidores efetivos lotados em determinada unidade parametrizando a consulta pelo atributo unid_id; Retornar os seguintes campos: Nome, idade, unidade de lotação e fotografia;
-- [x] Endpoint para consulta por unid_id
-- [x] Retorno com Nome, Idade, Unidade de lotação e  Fotografia
+- [x] Recebe na url a unid_id, pagina atual e o numero de registros por pagina: [`consultaUnidadeEfetivo.curl`](./requisicoes/consultaUnidadeEfetivo.curl) .
 
 ### C. Criar um endpoint que permita consultar o endereço funcional (da unidade onde o servidor é lotado) a partir de uma parte do nome do servidor efetivo. 
-- [x] Consulta por parte do nome do servidor
-- [x] Retorna endereço da unidade onde o servidor é lotado
+- [x] Recebe na url parte do nome, pagina atual e o numero de registros por pagina: [`consultaLotacaoEfetivo.curl`](./requisicoes/consultaLotacaoEfetivo.curl) .
 
 ### D. Realizar o upload de uma ou mais fotografias enviando-as para o Min.IO. A recuperação das imagens deverá ser através de links temporários gerados pela biblioteca do Min.IO com tempo de expiração de 5 minutos.
-- [x] Upload para MinIO
-- [x] Links temporários (5 min)
+- [x] Para enviar arquivos para um armazenamento de objetos, a ferramenta Genexus utiliza-se de uma objeto Storage Provider, essa funcao cria um fluxo de duas etapas. A primeira etapa é o envio do arquivo(no caso a foto) em sua forma binaria, sendo possivel enviar somente um arquivo por vez, esta etapa é feita pela requisicao [`uploadMinioGx.curl`](./requisicoes/uploadMinioGx.curl) , esta primeira requiscao ira retornar um identifcador do objeto que foi armazenado no armazenamento de objetos. Com o id que foi retornado deve-se fazer uma segunda requisicao, que vincula o id do objeto no armazenamento externo com um cadastro (no caso foto da pessoa), o vinculo é feito pela requisicao [`uploadMinioFoto.curl`](./requisicoes/uploadMinioFoto.curl), apos a vinculacao o objeto replicado de uma pasta temporaria para uma pasta permanente. 
 
 
 ## 1.3 Instruções de Entrega

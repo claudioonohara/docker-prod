@@ -1,0 +1,23 @@
+curl -X 'POST' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/unidade' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "SDTCRUnidade": {
+    "unid_id": 0,
+    "unid_nome": "string",
+    "unid_sigla": "string",
+    "endereco": [
+      {
+        "end_id": 0,
+        "end_tipo_logradouro": "string",
+        "end_logradouro": "string",
+        "end_numero": 0,
+        "end_bairro": "string",
+        "cid_id": 0,
+        "cid_nome": "string",
+        "cid_uf": "string"
+      }
+    ]
+  }
+}'

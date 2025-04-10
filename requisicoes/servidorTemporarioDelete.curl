@@ -1,0 +1,3 @@
+curl -X 'DELETE' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/servidorTemporario/1/2025-04-09/2025-04-09' \
+  -H 'accept: application/json'

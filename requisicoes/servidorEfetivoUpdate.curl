@@ -1,0 +1,27 @@
+curl -X 'PUT' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/servidorEfetivo/1/2' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "SDTCRServidorEfetivoAtualiza": {
+    "se_matricula": "string",
+    "pes_nome": "string",
+    "pes_data_nascimento": "2025-04-09",
+    "pes_sexo": "string",
+    "pes_mae": "string",
+    "pes_pai": "string",
+    "pes_idade": 0,
+    "endereco": [
+      {
+        "end_id": 0,
+        "end_tipo_logradouro": "string",
+        "end_logradouro": "string",
+        "end_numero": 0,
+        "end_bairro": "string",
+        "cid_id": 0,
+        "cid_nome": "string",
+        "cid_uf": "string"
+      }
+    ]
+  }
+}'

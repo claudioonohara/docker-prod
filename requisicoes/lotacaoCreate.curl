@@ -1,0 +1,21 @@
+curl -X 'POST' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/lotacao' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "SDTCRLotacao": {
+    "lot_id": 0,
+    "pes_id": 0,
+    "unid_id": 0,
+    "lot_data_lotacao": "2025-04-09",
+    "lot_data_remocao": "2025-04-09",
+    "lot_portaria": "string",
+    "pes_nome": "string",
+    "pes_data_nascimento": "2025-04-09",
+    "pes_sexo": "string",
+    "pes_mae": "string",
+    "pes_pai": "string",
+    "unid_nome": "string",
+    "unid_sigla": "string"
+  }
+}'

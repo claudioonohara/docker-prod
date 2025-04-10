@@ -1,0 +1,26 @@
+curl -X 'POST' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/servidorEfetivo' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsIlBFUkZJTCI6IkEiLCJleHAiOjE3NDQyNDAxNDJ9.nVLDVIZ0_pEE6CTOsvJCrdqQAuMOT5U9uDvr9i49YO0' \
+  -H 'Origin: http://foo.example'\
+  -d '{
+  "SDTCRServidorEfetivo": {
+    "se_matricula": "123456",
+    "pes_nome": "Teste Efetivo",
+    "pes_data_nascimento": "1985-04-09",
+    "pes_sexo": "Masculino",
+    "pes_mae": "Mae do Efetivo",
+    "pes_pai": "Pai do Efetivo",
+    "endereco": [
+      {
+        "end_tipo_logradouro": "Rua",
+        "end_logradouro": "rua do servidor efetivo",
+        "end_numero": 829,
+        "end_bairro": "bairro do efetivo",
+        "cid_nome": "cuiaba",
+        "cid_uf": "mt"
+      }
+    ]
+  }
+}'

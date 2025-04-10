@@ -1,0 +1,3 @@
+curl -X 'GET' \
+  'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/consulta/enderecoFuncional?Pes_Nome=nom&Paginaatual=1&Nroporpagina=3' \
+  -H 'accept: application/json'

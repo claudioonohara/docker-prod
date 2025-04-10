@@ -1,20 +1,4 @@
 services:
-
-  curl-client:
-    image: alpine:3.19
-    container_name: curl_client
-    networks:
-      - app-network-prod
-    depends_on:
-      - app
-    volumes:
-      - ./requisicoes:/home/curl
-    command: >
-      /bin/sh -c "
-      apk add --no-cache curl bash &&
-      tail -f /dev/null
-      "
-
   app:
     image: claudioonohara/springgx:local41
     container_name: appgx

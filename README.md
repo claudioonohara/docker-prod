@@ -107,9 +107,10 @@ Implementar uma API Rest para o diagrama de banco de dados acima tomando por bas
 
 
 ## 1.3 Instruções de Entrega
-Instruções:
 ### A. O projeto deverá estar disponível no Github. 
  - Crie um arquivo README.md contendo seus dados de inscrição bem como orientações de como executar e testar a solução apresentada.
+      - Para iniciar o projeto: docker compose up
+      - Para testar utilizar os arquivos da pasta requisicoes, cada arquivo esta ligado aos requisitos solicitados no edital. Cada um dos arquivos foi referenciado neste README.md, indicando qual item do edital esta atendendo. Para executar a requisicao é necessario ter a ferramenta [(curl)](https://curl.se/) curl  instalada, na maquina onde sera executado o comando docker compose up.
       - [x] Dados de inscricao: 
          - [Dados de inscricao aqui]
  - [x] Decorrido o prazo de entrega, nenhum outro commit deverá ser enviado ao repositório do projeto.

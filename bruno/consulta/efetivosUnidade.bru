@@ -5,7 +5,17 @@ meta {
 }
 
 get {
-  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/lotacao/1
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/consulta/efetivosUnidade?Unidid=2&Paginaatual=1&Nroporpagina=3
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+params:query {
+  Unidid: 2
+  Paginaatual: 1
+  Nroporpagina: 3
+}
+
+auth:bearer {
+  token: {{auth}}
 }

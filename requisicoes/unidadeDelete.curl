@@ -1,3 +1,5 @@
 curl -X 'DELETE' \
   'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/unidade/1' \
-  -H 'accept: application/json'
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsIlBFUkZJTCI6IkEiLCJleHAiOjE3NDQyNTcwNTR9.qRim1Kghro7oKr9ozo_9BIrN-CVZeGKqmJ5TX1Cc_QQ' \
+  -H 'Origin: http://foo.example'

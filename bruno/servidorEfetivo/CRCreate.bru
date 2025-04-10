@@ -1,0 +1,42 @@
+meta {
+  name: CRCreate
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/servidorEfetivo
+  body: json
+  auth: bearer
+}
+
+headers {
+  Origin: http://foo.example
+}
+
+auth:bearer {
+  token: {{auth}}
+}
+
+body:json {
+  {
+    "SDTCRServidorEfetivo": {
+      "se_matricula": "123456",
+      "pes_nome": "Teste Efetivo",
+      "pes_data_nascimento": "1985-04-09",
+      "pes_sexo": "Masculino",
+      "pes_mae": "Mae do Efetivo",
+      "pes_pai": "Pai do Efetivo",
+      "endereco": [
+        {
+          "end_tipo_logradouro": "Rua",
+          "end_logradouro": "rua do servidor efetivo",
+          "end_numero": 829,
+          "end_bairro": "bairro do efetivo",
+          "cid_nome": "cuiaba",
+          "cid_uf": "mt"
+        }
+      ]
+    }
+  }
+}

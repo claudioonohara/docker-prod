@@ -1,5 +1,5 @@
 meta {
-  name: Foto
+  name: Genexus Foto Endpoint
   type: http
   seq: 2
 }
@@ -7,7 +7,15 @@ meta {
 post {
   url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/APIFotoPessoa/gxobject
   body: file
-  auth: inherit
+  auth: bearer
+}
+
+headers {
+  Origin: http://foo.example
+}
+
+auth:bearer {
+  token: {{auth}}
 }
 
 body:multipart-form {

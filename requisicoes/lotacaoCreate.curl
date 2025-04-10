@@ -2,11 +2,10 @@ curl -X 'POST' \
   'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/lotacao' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsIlBFUkZJTCI6IkEiLCJleHAiOjE3NDQyNTY1NDd9.BNtb2jbMZR9WIEefLNn9Cu4jnGCOyLNmoVTOlb1H0CY' \
+  -H 'Origin: http://foo.example'\
   -d '{
   "SDTCRLotacao": {
-    "lot_id": 0,
-    "pes_id": 0,
-    "unid_id": 0,
     "lot_data_lotacao": "2025-04-09",
     "lot_data_remocao": "2025-04-09",
     "lot_portaria": "string",

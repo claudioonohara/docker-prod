@@ -1,3 +1,5 @@
 curl -X 'GET' \
   'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/consulta/efetivosUnidade?Unidid=1&Paginaatual=1&Nroporpagina=3' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsIlBFUkZJTCI6IkEiLCJleHAiOjE3NDQyNTY1NDd9.BNtb2jbMZR9WIEefLNn9Cu4jnGCOyLNmoVTOlb1H0CY' \
+  -H 'Origin: http://foo.example'\
   -H 'accept: application/json'

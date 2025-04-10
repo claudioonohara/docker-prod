@@ -5,14 +5,21 @@ meta {
 }
 
 post {
-  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/auth
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/refresh
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+headers {
+  Origin: http://foo.example
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsIlBFUkZJTCI6IkciLCJleHAiOjE3NDQxNjIwNjd9.CBczXEciMkcHz9iyZivCtYYJTZKh7oW6TtymAC5JAps
 }
 
 body:json {
   {
-    "username": "admin",
-    "password": "123"
+    "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWZyZXNoIiwiUEVSRklMIjoiQSIsImV4cCI6MTc0NDE2Nzc5Mn0.bVXzgKoKnWCOQ0BjS-oIxhqQB-uMl_PlD1d6pY6vl4c"
   }
 }

@@ -1,0 +1,39 @@
+meta {
+  name: CRUpdate
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/servidorEfetivo/9/string
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{auth}}
+}
+
+body:json {
+  {
+    "SDTCRServidorEfetivoAtualiza": {
+      "se_matricula": "string2",
+      "pes_nome": "string",
+      "pes_data_nascimento": "2025-04-04",
+      "pes_sexo": "string222222222",
+      "pes_mae": "string",
+      "pes_pai": "string",
+      "pes_idade": 0,
+      "endereco": [
+        {
+          "end_tipo_logradouro": "string",
+          "end_logradouro": "string",
+          "end_numero": 0,
+          "end_bairro": "string",
+          "cid_nome": "string",
+          "cid_uf": "mt"
+        }
+      ]
+    }
+  }
+}

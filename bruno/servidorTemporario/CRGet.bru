@@ -1,0 +1,15 @@
+meta {
+  name: CRGet
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/servidorTemporario/6/2025-04-03/2025-04-03
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsImV4cCI6MTc0MzcyMTk1Nn0.jqKVLHLESesgpJSc6XgvKNalUgvRMpGjz6ZJa4AR5v0
+}

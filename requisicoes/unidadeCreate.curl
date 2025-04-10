@@ -2,6 +2,8 @@ curl -X 'POST' \
   'http://localhost:8080/ProjetoPraticoJavaPostgreSQL/unidade' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b2tlbiIsIlBFUkZJTCI6IkEiLCJleHAiOjE3NDQyNTY1NDd9.BNtb2jbMZR9WIEefLNn9Cu4jnGCOyLNmoVTOlb1H0CY' \
+  -H 'Origin: http://foo.example' \
   -d '{
   "SDTCRUnidade": {
     "unid_id": 0,
@@ -9,14 +11,12 @@ curl -X 'POST' \
     "unid_sigla": "string",
     "endereco": [
       {
-        "end_id": 0,
         "end_tipo_logradouro": "string",
         "end_logradouro": "string",
         "end_numero": 0,
         "end_bairro": "string",
-        "cid_id": 0,
         "cid_nome": "string",
-        "cid_uf": "string"
+        "cid_uf": "mt"
       }
     ]
   }

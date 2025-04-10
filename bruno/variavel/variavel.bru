@@ -1,0 +1,18 @@
+meta {
+  name: variavel
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/APIVariavel/variavel
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "variavel": "CloudServices.config",
+    "filename": "Storage:STORAGE_PROVIDER_ACCESSKEYID"
+  }
+}

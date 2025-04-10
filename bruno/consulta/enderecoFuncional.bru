@@ -1,0 +1,21 @@
+meta {
+  name: enderecoFuncional
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/consulta/enderecoFuncional?Pes_Nome=str&Paginaatual=2&Nroporpagina=3
+  body: none
+  auth: bearer
+}
+
+params:query {
+  Pes_Nome: str
+  Paginaatual: 2
+  Nroporpagina: 3
+}
+
+auth:bearer {
+  token: {{auth}}
+}

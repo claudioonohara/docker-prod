@@ -7,15 +7,21 @@ meta {
 post {
   url: http://{{devUrl}}:8080/ProjetoPraticoJavaPostgreSQL/APIFotoPessoa/fotoPessoa
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+headers {
+  Origin: http://foo.example
+}
+
+auth:bearer {
+  token: {{auth}}
 }
 
 body:json {
   {
     "pes_id": 1,
     "fp_data": "2025-03-26",
-    "fp_bucket": "string",
-    "fp_hash": "string",
-    "fp_foto": "gxupload:469d76a2042d44758de1258b52f27209"
+    "fp_foto": "gxupload:ecb040d0daa440d8823a23324c73108e"
   }
 }

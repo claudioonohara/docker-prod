@@ -1,6 +1,6 @@
 services:
   app:
-    image: claudioonohara/springgx:local41
+    image: claudioonohara/springgx:latest
     container_name: appgx
     ports:
       - "8080:8080"

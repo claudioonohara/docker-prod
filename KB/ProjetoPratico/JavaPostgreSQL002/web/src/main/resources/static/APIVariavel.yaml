@@ -1,0 +1,66 @@
+openapi: 3.0.0
+info:
+  title: "APIVariavel"
+  description: "APIVariavel"
+  version: "20250409220308"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/APIVariavel
+paths:
+  /variavel:
+    post:
+      tags:
+        - APIVariavel  
+      operationId: "APIVariavel.variavel"
+      summary: "variavel"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/variavelInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/variavelOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    variavelOutput:
+      properties:
+        resultado:
+          type: "string"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    variavelInput:  
+      properties:
+        variavel:
+          type: "string"
+        filename:
+          type: "string"
+  
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+ 

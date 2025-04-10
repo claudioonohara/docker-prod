@@ -1,0 +1,332 @@
+openapi: 3.0.0
+info:
+  title: "APIServidorEfetivo"
+  description: "APIServidor Efetivo"
+  version: "20250408181335"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/
+paths:
+  /servidorEfetivo:
+    post:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__post"
+      summary: "servidorEfetivo__post"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorEfetivo__postInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__postOutput"
+        404:
+          description: "Not found"
+
+  /servidorEfetivo/{pes_id}/{se_matricula}:
+    put:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__put"
+      summary: "servidorEfetivo__put"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "se_matricula"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            
+
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorEfetivo__putInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__putOutput"
+        404:
+          description: "Not found"
+
+
+    delete:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__delete"
+      summary: "servidorEfetivo__delete"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "se_matricula"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GeneXus.Common.Messages_Message"  
+
+        404:
+          description: "Not found"
+
+    get:
+      tags:
+        - APIServidorEfetivo  
+      operationId: "APIServidorEfetivo.servidorEfetivo__get"
+      summary: "servidorEfetivo__get"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "se_matricula"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorEfetivo__getOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    servidorEfetivo__postOutput:
+      properties:
+        RetornoSDTCRServidorEfetivo:
+          description: "SDTCRServidor Efetivo"
+          $ref: "#/components/schemas/SDTCRServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorEfetivo__putOutput:
+      properties:
+        RetornoSDTCRServidorEfetivo:
+          description: "SDTCRServidor Efetivo"
+          $ref: "#/components/schemas/SDTCRServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+
+    servidorEfetivo__getOutput:
+      properties:
+        SDTCRServidorEfetivo:
+          description: "SDTCRServidor Efetivo"
+          $ref: "#/components/schemas/SDTCRServidorEfetivo"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorEfetivo__postInput:  
+      properties:
+        SDTCRServidorEfetivo:
+          description: "SDTCRServidor Efetivo"
+          $ref: "#/components/schemas/SDTCRServidorEfetivo"
+
+    servidorEfetivo__putInput:  
+      properties:
+        SDTCRServidorEfetivoAtualiza:
+          description: "SDTCRServidor Efetivo Atualiza"
+          $ref: "#/components/schemas/SDTCRServidorEfetivoAtualiza"
+
+
+  
+    SDTCRServidorEfetivo:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        pes_idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorEfetivo.endereco_enderecoItem"
+
+
+    SDTCRServidorEfetivo.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+
+
+      x-gx-level: "SDTCRServidorEfetivo"
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+    SDTCRServidorEfetivoAtualiza:
+      properties:
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        pes_idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorEfetivoAtualiza.endereco_enderecoItem"
+
+
+    SDTCRServidorEfetivoAtualiza.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+
+
+      x-gx-level: "SDTCRServidorEfetivoAtualiza"
+
+ 

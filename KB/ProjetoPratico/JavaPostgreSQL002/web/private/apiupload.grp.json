@@ -1,0 +1,17 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIUpload",
+"BasePath":"APIUpload",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"uploadfoto",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_uploadfoto",
+"Implementation":"PStorageProvider",
+"PathRegexp":"uploadfoto",
+"Path":"uploadfoto"
+
+}]}

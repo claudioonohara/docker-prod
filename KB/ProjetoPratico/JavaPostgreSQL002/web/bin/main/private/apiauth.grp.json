@@ -1,0 +1,28 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIAuth",
+"BasePath":"",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"auth",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_auth",
+"Implementation":"PLogin",
+"PathRegexp":"auth",
+"Path":"auth"
+
+},
+{
+"Verb":"POST",
+"Name":"refresh",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_refresh",
+"Implementation":"PRefreshToken",
+"PathRegexp":"refresh",
+"Path":"refresh"
+
+}]}

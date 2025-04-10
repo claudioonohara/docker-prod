@@ -1,0 +1,8 @@
+bc_dt_elem_i([ 0,3,0 ],'Fp_id',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Pes_id',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Fp_data',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Fp_bucket',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Fp_hash',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Fp_foto',allownulls,no).
+bc_dt_elem_i([ 0,3,0 ],'Fp_foto_gxi',allownulls,no).
+ 

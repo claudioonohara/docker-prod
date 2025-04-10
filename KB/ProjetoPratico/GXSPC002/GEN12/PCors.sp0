@@ -1,0 +1,1051 @@
+spec_i([ proc,103,'PCors','PCors',78,eng,'18_0_10-184260' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+default_i(e('Pgmname',2,2,'"PCors"')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'POSTGRESQL_EXTENSIONS','')).
+rule_i(0,datastore(1,'POSTGRESQL_VERSION','8_3')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'DS_READ_REPLICA','No')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD',root)).
+rule_i(0,datastore(1,'USER_ID',postgres)).
+rule_i(0,datastore(1,'CS_CNTDLG','2')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','4555')).
+rule_i(0,datastore(1,'CS_SERVER','192.168.68.113')).
+rule_i(0,datastore(1,'CS_DBNAME',projetoPraticoDB)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','org.postgresql.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','JDBC')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','15')).
+rule_i(0,datastore(1,'DBMS',15)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop(gxtest_ignoreForTestCoverage,'0')).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','KnowledgeBase')).
+rule_i(0,prop('FullyQualifiedName','PCors')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,'ProjetoPratico'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','PCors')).
+rule_i(0,prop('ObjName','PCors')).
+rule_i(0,maingen(12)).
+rule_i(0,parm([ 'Messages' ],[])).
+rule_i(0,parmio([ [ 'Messages',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Pgmname',[],[ [],[ t('"PCors"',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Pgmname').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',14 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
+attri_i('Messages',[ 'Messages',o(objectcollection('GeneXus\Common\Messages.Message')),0,0,'',0,'Messages','',12 ]).
+attri_i('Message',[ 'Message',o('GeneXus\Common\Messages.Message'),0,0,'',0,'Message','',11 ]).
+attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,'Http Request','',10 ]).
+attri_i('Originheader',[ 'OriginHeader',svchar,400,0,'',0,'Origin Header','',9 ]).
+attri_i('Url_permitida',[ url_permitida,svchar,400,0,'',0,url_permitida,'',8 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[ t('',107,1,0),t([ t('Url_permitida',23,1,1),t('setempty(',1,1,16) ],31,1,1),t(')',4,0,26) ]).
+b_line_i(2,1,1,cmd,0,[ t('',109,2,0),t([ t(o(14,'GeneXus\Common\Configuration\ConfigurationManager'),72,0,4),t('hasvalue(',1,0,25) ],31,2,25),t('"CORS_ALLOW_ORIGIN"',3,2,35),t(')',4,0,54) ]).
+b_line_i(3,1,1,cmd,0,[ t('',107,3,0),t('Url_permitida',23,0,0),t(=,10,0,0),t([ t(o(14,'GeneXus\Common\Configuration\ConfigurationManager'),72,0,0),t('getvalue(',1,0,0) ],31,0,0),t('"CORS_ALLOW_ORIGIN"',3,0,0),t(')',4,0,0) ]).
+b_line_i(4,1,1,cmd,0,[ t('',111,4,0) ]).
+b_line_i(5,1,1,cmd,0,[]).
+b_line_i(6,1,1,cmd,0,[ t('',107,6,0),t([ t(o(14,'GeneXus\Common\Log'),72,6,1),t('info(',1,6,5) ],31,6,5),t('Pgmname',23,0,11),t(+,5,0,20),t('" &OriginHeader --->"',3,6,22),t(+,5,0,44),t('Originheader',23,6,46),t(')',4,0,71) ]).
+b_line_i(7,1,1,cmd,0,[ t('',141,7,0),t('Url_permitida',23,0,5),t(')',4,0,19) ]).
+b_line_i(8,1,1,cmd,0,[ t('',107,8,0),t('Originheader',23,0,0),t(=,10,0,0),t([ t('Httprequest',23,0,0),t('getheader(',1,0,0) ],31,0,0),t('"Origin"',3,0,0),t(')',4,0,0) ]).
+b_line_i(9,1,1,cmd,0,[ t('',109,9,0),t('.NOT.',8,0,4),t('null(',1,9,25),t('Url_permitida',23,0,10),t(')',4,0,34) ]).
+b_line_i(10,1,1,cmd,0,[ t('',107,10,0),t([ t(o(14,'GeneXus\Common\Log'),72,10,2),t('info(',1,10,6) ],31,10,6),t('Pgmname',23,0,12),t(+,5,0,21),t('" &OriginHeader --->"',3,10,23),t(+,5,0,45),t('Originheader',23,10,47),t(')',4,0,72) ]).
+b_line_i(11,1,1,cmd,0,[ t('',141,11,0),t('Originheader',23,0,6),t(')',4,0,19) ]).
+b_line_i(12,1,1,cmd,0,[ t('',109,12,0),t('upper(',1,12,28),t('trim(',1,0,20),t('Url_permitida',23,0,5),t(')',4,0,26),t(')',4,0,37),t(<>,10,0,39),t('upper(',1,12,64),t('trim(',1,0,56),t('Originheader',23,0,42),t(')',4,0,62),t(')',4,0,73) ]).
+b_line_i(13,1,1,cmd,0,[ t('',107,13,0),t([ t('Message',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('"403 Forbidden"',3,0,0) ]).
+b_line_i(14,1,1,cmd,0,[ t('',107,14,0),t([ t('Messages',23,14,3),t('add(',1,14,13) ],31,14,3),t('Message',23,0,18),t(')',4,0,26) ]).
+b_line_i(15,1,1,cmd,0,[ t('',118,15,0) ]).
+b_line_i(16,1,1,cmd,0,[ t('',111,16,0) ]).
+b_line_i(17,1,1,cmd,0,[ t('',111,17,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(42,1).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,1,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,1,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,1,0 ],'ObjName','Messages').
+struct_dt_i([ 26,1,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,1,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,1,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,1,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,1,0 ],collection,'True').
+struct_dt_i([ 26,1,0 ],datatype,[ 26,1,1 ]).
+struct_dt_i([ 26,1,0 ],'CollectionItemName','Message').
+struct_dt_i([ 26,1,0 ],'XmlName','').
+struct_dt_i([ 26,1,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,1,0 ],'XmlNamespace','').
+struct_dt_i([ 26,1,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,1,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,1,0 ],'JsonName','').
+struct_dt_i([ 26,1,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,1,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,1,0 ],isexternal,'True').
+struct_dt_i([ 26,1,1 ],name,'Message').
+struct_dt_i([ 26,1,1 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 14,7,0 ],name,'GeneXus\Common\Configuration\ConfigurationManager').
+struct_dt_i([ 14,7,0 ],'ObjName','ConfigurationManager').
+struct_dt_i([ 14,7,0 ],'ObjDesc','Configuration Manager').
+struct_dt_i([ 14,7,0 ],'ExoType','0').
+struct_dt_i([ 14,7,0 ],'ObjNamespace','GeneXus.Configuration').
+struct_dt_i([ 14,7,0 ],'ExoImporterVersion','').
+struct_dt_i([ 14,7,0 ],'ExoSourceURI','').
+struct_dt_i([ 14,7,0 ],'AssemblyName','').
+struct_dt_i([ 14,7,0 ],'ExoNameNETCORE','ConfigurationManager').
+struct_dt_i([ 14,7,0 ],'NetCoreAssemblyName','').
+struct_dt_i([ 14,7,0 ],'NetCorePackageName','').
+struct_dt_i([ 14,7,0 ],'ExoConstructorParametersNETCORE','').
+struct_dt_i([ 14,7,0 ],'ExoNameJAVA','ConfigurationManager').
+struct_dt_i([ 14,7,0 ],'JavaArtifactId','').
+struct_dt_i([ 14,7,0 ],'PackageName','com.genexus.configuration').
+struct_dt_i([ 14,7,0 ],'ExoConstructorParametersJAVA','').
+struct_dt_i([ 14,7,0 ],'ExoNameJS','').
+struct_dt_i([ 14,7,0 ],'ExoReferencedFilesJS','').
+struct_dt_i([ 14,7,0 ],'ExoJsModuleName','').
+struct_dt_i([ 14,7,0 ],'ExoJsModulePath','').
+struct_dt_i([ 14,7,0 ],'ExoJsModuleReference','').
+struct_dt_i([ 14,7,0 ],'Folder',o(120,'GeneXus\Common\Configuration')).
+struct_dt_i([ 14,7,0 ],'FullyQualifiedName','GeneXus.Common.Configuration.ConfigurationManager').
+struct_dt_i([ 14,7,0 ],'ObjectVisibility','Public').
+struct_dt_i([ 14,7,0 ],isexternal,'True').
+struct_dt_i([ 14,13,0 ],name,'GeneXus\Common\Log').
+struct_dt_i([ 14,13,0 ],'ObjName','Log').
+struct_dt_i([ 14,13,0 ],'ObjDesc','Allow to Log application events to the selected target log in the environment properties').
+struct_dt_i([ 14,13,0 ],'ExoType','0').
+struct_dt_i([ 14,13,0 ],'ObjNamespace','GeneXus.Diagnostics').
+struct_dt_i([ 14,13,0 ],'ExoImporterVersion','').
+struct_dt_i([ 14,13,0 ],'ExoSourceURI','').
+struct_dt_i([ 14,13,0 ],'AssemblyName','').
+struct_dt_i([ 14,13,0 ],'ExoNameNETCORE','Log').
+struct_dt_i([ 14,13,0 ],'NetCoreAssemblyName','').
+struct_dt_i([ 14,13,0 ],'NetCorePackageName','').
+struct_dt_i([ 14,13,0 ],'ExoConstructorParametersNETCORE','').
+struct_dt_i([ 14,13,0 ],'ExoNameJAVA','UserLog').
+struct_dt_i([ 14,13,0 ],'JavaArtifactId','').
+struct_dt_i([ 14,13,0 ],'PackageName','com.genexus.diagnostics').
+struct_dt_i([ 14,13,0 ],'ExoConstructorParametersJAVA','').
+struct_dt_i([ 14,13,0 ],'ExoNameJS','').
+struct_dt_i([ 14,13,0 ],'ExoReferencedFilesJS','').
+struct_dt_i([ 14,13,0 ],'ExoJsModuleName','').
+struct_dt_i([ 14,13,0 ],'ExoJsModulePath','').
+struct_dt_i([ 14,13,0 ],'ExoJsModuleReference','').
+struct_dt_i([ 14,13,0 ],'Folder',o(120,'GeneXus\Common')).
+struct_dt_i([ 14,13,0 ],'FullyQualifiedName','GeneXus.Common.Log').
+struct_dt_i([ 14,13,0 ],'ObjectVisibility','Public').
+struct_dt_i([ 14,13,0 ],isexternal,'True').
+struct_dt_i([ 26,1,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,1,1 ],fullname,'GeneXus\Common\Messages.Message').
+struct_dt_i([ 14,7,0 ],fullname,'GeneXus\Common\Configuration\ConfigurationManager').
+struct_dt_i([ 14,13,0 ],fullname,'GeneXus\Common\Log').
+ 
+struct_dt_elem_i([ 26,1,1 ],1,name,'Id').
+struct_dt_elem_i([ 26,1,1 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,1,1 ],1,length,128).
+struct_dt_elem_i([ 26,1,1 ],1,decimals,0).
+struct_dt_elem_i([ 26,1,1 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,1,1 ],1,pic,'').
+struct_dt_elem_i([ 26,1,1 ],1,collection,'False').
+struct_dt_elem_i([ 26,1,1 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,1,1 ],1,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlName','').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,1,1 ],1,soaptype,'').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,1,1 ],1,'JsonName','').
+struct_dt_elem_i([ 26,1,1 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,1,1 ],2,name,'Type').
+struct_dt_elem_i([ 26,1,1 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,1,1 ],2,basedon,7).
+struct_dt_elem_i([ 26,1,1 ],2,length,2).
+struct_dt_elem_i([ 26,1,1 ],2,decimals,0).
+struct_dt_elem_i([ 26,1,1 ],2,sign,0).
+struct_dt_elem_i([ 26,1,1 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,1,1 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,1,1 ],2,collection,'False').
+struct_dt_elem_i([ 26,1,1 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,1,1 ],2,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlName','').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,1,1 ],2,soaptype,'').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,1,1 ],2,'JsonName','').
+struct_dt_elem_i([ 26,1,1 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,1,1 ],3,name,'Description').
+struct_dt_elem_i([ 26,1,1 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,1,1 ],3,length,256).
+struct_dt_elem_i([ 26,1,1 ],3,decimals,0).
+struct_dt_elem_i([ 26,1,1 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,1,1 ],3,pic,'').
+struct_dt_elem_i([ 26,1,1 ],3,collection,'False').
+struct_dt_elem_i([ 26,1,1 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,1,1 ],3,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlName','').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,1,1 ],3,soaptype,'').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,1,1 ],3,'JsonName','').
+struct_dt_elem_i([ 26,1,1 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,1,1 ],2,pic,'ZZZZZZZ9').
+ 
+struct_dt_method_i([ 14,7,0 ],1,name,getvalue).
+struct_dt_method_i([ 14,7,0 ],1,camelname,'GetValue').
+struct_dt_method_i([ 14,7,0 ],1,externalType,'').
+struct_dt_method_i([ 14,7,0 ],1,length,40).
+struct_dt_method_i([ 14,7,0 ],1,decimals,0).
+struct_dt_method_i([ 14,7,0 ],1,type,[ 13,40,0 ]).
+struct_dt_method_i([ 14,7,0 ],1,'IntName','GetValue').
+struct_dt_method_i([ 14,7,0 ],1,'ExoItemDesc','').
+struct_dt_method_i([ 14,7,0 ],1,'ExoItemType','VarChar').
+struct_dt_method_i([ 14,7,0 ],1,basedon,'').
+struct_dt_method_i([ 14,7,0 ],1,'XmlName','').
+struct_dt_method_i([ 14,7,0 ],1,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,7,0 ],1,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,7,0 ],1,'ExoNameNETCORE','GetValue').
+struct_dt_method_i([ 14,7,0 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_method_i([ 14,7,0 ],1,'ExoNameJAVA',getValue).
+struct_dt_method_i([ 14,7,0 ],1,'ExoItemExtTypeJAVA','String').
+struct_dt_method_i([ 14,7,0 ],1,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,7,0 ],1,'ExoNameJS','').
+struct_dt_method_i([ 14,7,0 ],1,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,7,0 ],1,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,7,0 ],1,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,7,0 ],2,name,getvalue).
+struct_dt_method_i([ 14,7,0 ],2,camelname,'GetValue').
+struct_dt_method_i([ 14,7,0 ],2,externalType,'').
+struct_dt_method_i([ 14,7,0 ],2,length,40).
+struct_dt_method_i([ 14,7,0 ],2,decimals,0).
+struct_dt_method_i([ 14,7,0 ],2,type,[ 13,40,0 ]).
+struct_dt_method_i([ 14,7,0 ],2,'IntName','GetValue').
+struct_dt_method_i([ 14,7,0 ],2,'ExoItemDesc','').
+struct_dt_method_i([ 14,7,0 ],2,'ExoItemType','VarChar').
+struct_dt_method_i([ 14,7,0 ],2,basedon,'').
+struct_dt_method_i([ 14,7,0 ],2,'XmlName','').
+struct_dt_method_i([ 14,7,0 ],2,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,7,0 ],2,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,7,0 ],2,'ExoNameNETCORE','GetValue').
+struct_dt_method_i([ 14,7,0 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_method_i([ 14,7,0 ],2,'ExoNameJAVA',getValue).
+struct_dt_method_i([ 14,7,0 ],2,'ExoItemExtTypeJAVA','String').
+struct_dt_method_i([ 14,7,0 ],2,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,7,0 ],2,'ExoNameJS','').
+struct_dt_method_i([ 14,7,0 ],2,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,7,0 ],2,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,7,0 ],2,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,7,0 ],3,name,hasvalue).
+struct_dt_method_i([ 14,7,0 ],3,camelname,'HasValue').
+struct_dt_method_i([ 14,7,0 ],3,externalType,'').
+struct_dt_method_i([ 14,7,0 ],3,length,4).
+struct_dt_method_i([ 14,7,0 ],3,decimals,0).
+struct_dt_method_i([ 14,7,0 ],3,type,[ 15,4,0 ]).
+struct_dt_method_i([ 14,7,0 ],3,'IntName','HasValue').
+struct_dt_method_i([ 14,7,0 ],3,'ExoItemDesc','').
+struct_dt_method_i([ 14,7,0 ],3,'ExoItemType','Boolean').
+struct_dt_method_i([ 14,7,0 ],3,basedon,'').
+struct_dt_method_i([ 14,7,0 ],3,'XmlName','').
+struct_dt_method_i([ 14,7,0 ],3,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,7,0 ],3,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,7,0 ],3,'ExoNameNETCORE','HasValue').
+struct_dt_method_i([ 14,7,0 ],3,'ExoItemExtTypeNETCORE','System.Boolean').
+struct_dt_method_i([ 14,7,0 ],3,'ExoNameJAVA',hasValue).
+struct_dt_method_i([ 14,7,0 ],3,'ExoItemExtTypeJAVA',boolean).
+struct_dt_method_i([ 14,7,0 ],3,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,7,0 ],3,'ExoNameJS','').
+struct_dt_method_i([ 14,7,0 ],3,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,7,0 ],3,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,7,0 ],3,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,7,0 ],4,name,hasvalue).
+struct_dt_method_i([ 14,7,0 ],4,camelname,'HasValue').
+struct_dt_method_i([ 14,7,0 ],4,externalType,'').
+struct_dt_method_i([ 14,7,0 ],4,length,4).
+struct_dt_method_i([ 14,7,0 ],4,decimals,0).
+struct_dt_method_i([ 14,7,0 ],4,type,[ 15,4,0 ]).
+struct_dt_method_i([ 14,7,0 ],4,'IntName','HasValue').
+struct_dt_method_i([ 14,7,0 ],4,'ExoItemDesc','').
+struct_dt_method_i([ 14,7,0 ],4,'ExoItemType','Boolean').
+struct_dt_method_i([ 14,7,0 ],4,basedon,'').
+struct_dt_method_i([ 14,7,0 ],4,'XmlName','').
+struct_dt_method_i([ 14,7,0 ],4,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,7,0 ],4,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,7,0 ],4,'ExoNameNETCORE','HasValue').
+struct_dt_method_i([ 14,7,0 ],4,'ExoItemExtTypeNETCORE','System.Boolean').
+struct_dt_method_i([ 14,7,0 ],4,'ExoNameJAVA',hasValue).
+struct_dt_method_i([ 14,7,0 ],4,'ExoItemExtTypeJAVA',boolean).
+struct_dt_method_i([ 14,7,0 ],4,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,7,0 ],4,'ExoNameJS','').
+struct_dt_method_i([ 14,7,0 ],4,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,7,0 ],4,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,7,0 ],4,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],1,name,write).
+struct_dt_method_i([ 14,13,0 ],1,camelname,'Write').
+struct_dt_method_i([ 14,13,0 ],1,externalType,'').
+struct_dt_method_i([ 14,13,0 ],1,length,8).
+struct_dt_method_i([ 14,13,0 ],1,decimals,0).
+struct_dt_method_i([ 14,13,0 ],1,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],1,'IntName','Write').
+struct_dt_method_i([ 14,13,0 ],1,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],1,basedon,'').
+struct_dt_method_i([ 14,13,0 ],1,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],1,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],1,'ExoNameNETCORE','Write').
+struct_dt_method_i([ 14,13,0 ],1,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoNameJAVA',write).
+struct_dt_method_i([ 14,13,0 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],1,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],1,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],2,name,write).
+struct_dt_method_i([ 14,13,0 ],2,camelname,'Write').
+struct_dt_method_i([ 14,13,0 ],2,externalType,'').
+struct_dt_method_i([ 14,13,0 ],2,length,8).
+struct_dt_method_i([ 14,13,0 ],2,decimals,0).
+struct_dt_method_i([ 14,13,0 ],2,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],2,'IntName','Write').
+struct_dt_method_i([ 14,13,0 ],2,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],2,basedon,'').
+struct_dt_method_i([ 14,13,0 ],2,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],2,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],2,'ExoNameNETCORE','Write').
+struct_dt_method_i([ 14,13,0 ],2,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoNameJAVA',write).
+struct_dt_method_i([ 14,13,0 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],2,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],2,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],3,name,error).
+struct_dt_method_i([ 14,13,0 ],3,camelname,'Error').
+struct_dt_method_i([ 14,13,0 ],3,externalType,'').
+struct_dt_method_i([ 14,13,0 ],3,length,8).
+struct_dt_method_i([ 14,13,0 ],3,decimals,0).
+struct_dt_method_i([ 14,13,0 ],3,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],3,'IntName','Error').
+struct_dt_method_i([ 14,13,0 ],3,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],3,basedon,'').
+struct_dt_method_i([ 14,13,0 ],3,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],3,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],3,'ExoNameNETCORE','Error').
+struct_dt_method_i([ 14,13,0 ],3,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoNameJAVA',error).
+struct_dt_method_i([ 14,13,0 ],3,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],3,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],3,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],4,name,error).
+struct_dt_method_i([ 14,13,0 ],4,camelname,'Error').
+struct_dt_method_i([ 14,13,0 ],4,externalType,'').
+struct_dt_method_i([ 14,13,0 ],4,length,8).
+struct_dt_method_i([ 14,13,0 ],4,decimals,0).
+struct_dt_method_i([ 14,13,0 ],4,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],4,'IntName','Error').
+struct_dt_method_i([ 14,13,0 ],4,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],4,basedon,'').
+struct_dt_method_i([ 14,13,0 ],4,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],4,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],4,'ExoNameNETCORE','Error').
+struct_dt_method_i([ 14,13,0 ],4,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoNameJAVA',error).
+struct_dt_method_i([ 14,13,0 ],4,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],4,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],4,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],5,name,warning).
+struct_dt_method_i([ 14,13,0 ],5,camelname,'Warning').
+struct_dt_method_i([ 14,13,0 ],5,externalType,'').
+struct_dt_method_i([ 14,13,0 ],5,length,8).
+struct_dt_method_i([ 14,13,0 ],5,decimals,0).
+struct_dt_method_i([ 14,13,0 ],5,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],5,'IntName','Warning').
+struct_dt_method_i([ 14,13,0 ],5,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],5,basedon,'').
+struct_dt_method_i([ 14,13,0 ],5,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],5,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],5,'ExoNameNETCORE','Warning').
+struct_dt_method_i([ 14,13,0 ],5,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoNameJAVA',warning).
+struct_dt_method_i([ 14,13,0 ],5,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],5,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],5,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],6,name,warning).
+struct_dt_method_i([ 14,13,0 ],6,camelname,'Warning').
+struct_dt_method_i([ 14,13,0 ],6,externalType,'').
+struct_dt_method_i([ 14,13,0 ],6,length,8).
+struct_dt_method_i([ 14,13,0 ],6,decimals,0).
+struct_dt_method_i([ 14,13,0 ],6,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],6,'IntName','Warning').
+struct_dt_method_i([ 14,13,0 ],6,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],6,basedon,'').
+struct_dt_method_i([ 14,13,0 ],6,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],6,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],6,'ExoNameNETCORE','Warning').
+struct_dt_method_i([ 14,13,0 ],6,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoNameJAVA',warning).
+struct_dt_method_i([ 14,13,0 ],6,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],6,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],6,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],7,name,info).
+struct_dt_method_i([ 14,13,0 ],7,camelname,'Info').
+struct_dt_method_i([ 14,13,0 ],7,externalType,'').
+struct_dt_method_i([ 14,13,0 ],7,length,8).
+struct_dt_method_i([ 14,13,0 ],7,decimals,0).
+struct_dt_method_i([ 14,13,0 ],7,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],7,'IntName','Info').
+struct_dt_method_i([ 14,13,0 ],7,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],7,basedon,'').
+struct_dt_method_i([ 14,13,0 ],7,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],7,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],7,'ExoNameNETCORE','Info').
+struct_dt_method_i([ 14,13,0 ],7,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoNameJAVA',info).
+struct_dt_method_i([ 14,13,0 ],7,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],7,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],7,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],8,name,info).
+struct_dt_method_i([ 14,13,0 ],8,camelname,'Info').
+struct_dt_method_i([ 14,13,0 ],8,externalType,'').
+struct_dt_method_i([ 14,13,0 ],8,length,8).
+struct_dt_method_i([ 14,13,0 ],8,decimals,0).
+struct_dt_method_i([ 14,13,0 ],8,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],8,'IntName','Info').
+struct_dt_method_i([ 14,13,0 ],8,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],8,basedon,'').
+struct_dt_method_i([ 14,13,0 ],8,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],8,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],8,'ExoNameNETCORE','Info').
+struct_dt_method_i([ 14,13,0 ],8,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoNameJAVA',info).
+struct_dt_method_i([ 14,13,0 ],8,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],8,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],8,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],9,name,debug).
+struct_dt_method_i([ 14,13,0 ],9,camelname,'Debug').
+struct_dt_method_i([ 14,13,0 ],9,externalType,'').
+struct_dt_method_i([ 14,13,0 ],9,length,8).
+struct_dt_method_i([ 14,13,0 ],9,decimals,0).
+struct_dt_method_i([ 14,13,0 ],9,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],9,'IntName','Debug').
+struct_dt_method_i([ 14,13,0 ],9,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],9,basedon,'').
+struct_dt_method_i([ 14,13,0 ],9,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],9,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],9,'ExoNameNETCORE','Debug').
+struct_dt_method_i([ 14,13,0 ],9,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoNameJAVA',debug).
+struct_dt_method_i([ 14,13,0 ],9,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],9,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],9,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],10,name,debug).
+struct_dt_method_i([ 14,13,0 ],10,camelname,'Debug').
+struct_dt_method_i([ 14,13,0 ],10,externalType,'').
+struct_dt_method_i([ 14,13,0 ],10,length,8).
+struct_dt_method_i([ 14,13,0 ],10,decimals,0).
+struct_dt_method_i([ 14,13,0 ],10,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],10,'IntName','Debug').
+struct_dt_method_i([ 14,13,0 ],10,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],10,basedon,'').
+struct_dt_method_i([ 14,13,0 ],10,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],10,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],10,'ExoNameNETCORE','Debug').
+struct_dt_method_i([ 14,13,0 ],10,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoNameJAVA',debug).
+struct_dt_method_i([ 14,13,0 ],10,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],10,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],10,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],11,name,fatal).
+struct_dt_method_i([ 14,13,0 ],11,camelname,'Fatal').
+struct_dt_method_i([ 14,13,0 ],11,externalType,'').
+struct_dt_method_i([ 14,13,0 ],11,length,8).
+struct_dt_method_i([ 14,13,0 ],11,decimals,0).
+struct_dt_method_i([ 14,13,0 ],11,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],11,'IntName','Fatal').
+struct_dt_method_i([ 14,13,0 ],11,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],11,basedon,'').
+struct_dt_method_i([ 14,13,0 ],11,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],11,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],11,'ExoNameNETCORE','Fatal').
+struct_dt_method_i([ 14,13,0 ],11,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoNameJAVA',fatal).
+struct_dt_method_i([ 14,13,0 ],11,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],11,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],11,'ExoAsyncJSModule','0').
+struct_dt_method_i([ 14,13,0 ],12,name,fatal).
+struct_dt_method_i([ 14,13,0 ],12,camelname,'Fatal').
+struct_dt_method_i([ 14,13,0 ],12,externalType,'').
+struct_dt_method_i([ 14,13,0 ],12,length,8).
+struct_dt_method_i([ 14,13,0 ],12,decimals,0).
+struct_dt_method_i([ 14,13,0 ],12,type,[ 257,8,0 ]).
+struct_dt_method_i([ 14,13,0 ],12,'IntName','Fatal').
+struct_dt_method_i([ 14,13,0 ],12,'ExoItemDesc','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoItemType','None').
+struct_dt_method_i([ 14,13,0 ],12,basedon,'').
+struct_dt_method_i([ 14,13,0 ],12,'XmlName','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoMethodIsStatic','-1').
+struct_dt_method_i([ 14,13,0 ],12,'ExoExternalMember',idExoExternalMemberDefault).
+struct_dt_method_i([ 14,13,0 ],12,'ExoNameNETCORE','Fatal').
+struct_dt_method_i([ 14,13,0 ],12,'ExoItemExtTypeNETCORE','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoNameJAVA',fatal).
+struct_dt_method_i([ 14,13,0 ],12,'ExoItemExtTypeJAVA','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoMethodThrows','NO').
+struct_dt_method_i([ 14,13,0 ],12,'ExoNameJS','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoExtNameJSModule','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoMemberJsModulePath','').
+struct_dt_method_i([ 14,13,0 ],12,'ExoAsyncJSModule','0').
+ 
+struct_dt_param_i([ 14,7,1 ],1,name,propname).
+struct_dt_param_i([ 14,7,1 ],1,camelname,propName).
+struct_dt_param_i([ 14,7,1 ],1,externalType,'').
+struct_dt_param_i([ 14,7,1 ],1,length,40).
+struct_dt_param_i([ 14,7,1 ],1,decimals,0).
+struct_dt_param_i([ 14,7,1 ],1,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,7,1 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,7,1 ],1,'IntName',propName).
+struct_dt_param_i([ 14,7,1 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,7,1 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,7,1 ],1,basedon,'').
+struct_dt_param_i([ 14,7,1 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,7,1 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,7,2 ],1,name,propname).
+struct_dt_param_i([ 14,7,2 ],1,camelname,propName).
+struct_dt_param_i([ 14,7,2 ],1,externalType,'').
+struct_dt_param_i([ 14,7,2 ],1,length,40).
+struct_dt_param_i([ 14,7,2 ],1,decimals,0).
+struct_dt_param_i([ 14,7,2 ],1,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,7,2 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,7,2 ],1,'IntName',propName).
+struct_dt_param_i([ 14,7,2 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,7,2 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,7,2 ],1,basedon,'').
+struct_dt_param_i([ 14,7,2 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,7,2 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,7,2 ],2,name,filename).
+struct_dt_param_i([ 14,7,2 ],2,camelname,fileName).
+struct_dt_param_i([ 14,7,2 ],2,externalType,'').
+struct_dt_param_i([ 14,7,2 ],2,length,40).
+struct_dt_param_i([ 14,7,2 ],2,decimals,0).
+struct_dt_param_i([ 14,7,2 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,7,2 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,7,2 ],2,'IntName',fileName).
+struct_dt_param_i([ 14,7,2 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,7,2 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,7,2 ],2,basedon,'').
+struct_dt_param_i([ 14,7,2 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,7,2 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,7,3 ],1,name,propname).
+struct_dt_param_i([ 14,7,3 ],1,camelname,propName).
+struct_dt_param_i([ 14,7,3 ],1,externalType,'').
+struct_dt_param_i([ 14,7,3 ],1,length,40).
+struct_dt_param_i([ 14,7,3 ],1,decimals,0).
+struct_dt_param_i([ 14,7,3 ],1,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,7,3 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,7,3 ],1,'IntName',propName).
+struct_dt_param_i([ 14,7,3 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,7,3 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,7,3 ],1,basedon,'').
+struct_dt_param_i([ 14,7,3 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,7,3 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,7,4 ],1,name,propname).
+struct_dt_param_i([ 14,7,4 ],1,camelname,propName).
+struct_dt_param_i([ 14,7,4 ],1,externalType,'').
+struct_dt_param_i([ 14,7,4 ],1,length,40).
+struct_dt_param_i([ 14,7,4 ],1,decimals,0).
+struct_dt_param_i([ 14,7,4 ],1,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,7,4 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,7,4 ],1,'IntName',propName).
+struct_dt_param_i([ 14,7,4 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,7,4 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,7,4 ],1,basedon,'').
+struct_dt_param_i([ 14,7,4 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,7,4 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,7,4 ],2,name,filename).
+struct_dt_param_i([ 14,7,4 ],2,camelname,fileName).
+struct_dt_param_i([ 14,7,4 ],2,externalType,'').
+struct_dt_param_i([ 14,7,4 ],2,length,40).
+struct_dt_param_i([ 14,7,4 ],2,decimals,0).
+struct_dt_param_i([ 14,7,4 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,7,4 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,7,4 ],2,'IntName',fileName).
+struct_dt_param_i([ 14,7,4 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,7,4 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,7,4 ],2,basedon,'').
+struct_dt_param_i([ 14,7,4 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,7,4 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,1 ],1,name,message).
+struct_dt_param_i([ 14,13,1 ],1,camelname,message).
+struct_dt_param_i([ 14,13,1 ],1,externalType,'').
+struct_dt_param_i([ 14,13,1 ],1,length,1000).
+struct_dt_param_i([ 14,13,1 ],1,decimals,0).
+struct_dt_param_i([ 14,13,1 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,1 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,1 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,1 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,1 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,1 ],1,basedon,'').
+struct_dt_param_i([ 14,13,1 ],1,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,1 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,2 ],1,name,message).
+struct_dt_param_i([ 14,13,2 ],1,camelname,message).
+struct_dt_param_i([ 14,13,2 ],1,externalType,'').
+struct_dt_param_i([ 14,13,2 ],1,length,1000).
+struct_dt_param_i([ 14,13,2 ],1,decimals,0).
+struct_dt_param_i([ 14,13,2 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,2 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,2 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,2 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,2 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,2 ],1,basedon,'').
+struct_dt_param_i([ 14,13,2 ],1,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,2 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,2 ],2,name,topic).
+struct_dt_param_i([ 14,13,2 ],2,camelname,topic).
+struct_dt_param_i([ 14,13,2 ],2,externalType,'').
+struct_dt_param_i([ 14,13,2 ],2,length,40).
+struct_dt_param_i([ 14,13,2 ],2,decimals,0).
+struct_dt_param_i([ 14,13,2 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,13,2 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,2 ],2,'IntName',topic).
+struct_dt_param_i([ 14,13,2 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,2 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,2 ],2,basedon,'').
+struct_dt_param_i([ 14,13,2 ],2,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,2 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,2 ],3,name,loglevel).
+struct_dt_param_i([ 14,13,2 ],3,camelname,logLevel).
+struct_dt_param_i([ 14,13,2 ],3,externalType,'').
+struct_dt_param_i([ 14,13,2 ],3,length,4).
+struct_dt_param_i([ 14,13,2 ],3,decimals,0).
+struct_dt_param_i([ 14,13,2 ],3,sign,0).
+struct_dt_param_i([ 14,13,2 ],3,type,[ 4,4,0 ]).
+struct_dt_param_i([ 14,13,2 ],3,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,2 ],3,'IntName',logLevel).
+struct_dt_param_i([ 14,13,2 ],3,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,2 ],3,'ExoItemType','Numeric').
+struct_dt_param_i([ 14,13,2 ],3,basedon,17).
+struct_dt_param_i([ 14,13,2 ],3,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,2 ],3,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,3 ],1,name,message).
+struct_dt_param_i([ 14,13,3 ],1,camelname,message).
+struct_dt_param_i([ 14,13,3 ],1,externalType,'').
+struct_dt_param_i([ 14,13,3 ],1,length,1000).
+struct_dt_param_i([ 14,13,3 ],1,decimals,0).
+struct_dt_param_i([ 14,13,3 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,3 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,3 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,3 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,3 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,3 ],1,basedon,'').
+struct_dt_param_i([ 14,13,3 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,3 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,3 ],2,name,topic).
+struct_dt_param_i([ 14,13,3 ],2,camelname,topic).
+struct_dt_param_i([ 14,13,3 ],2,externalType,'').
+struct_dt_param_i([ 14,13,3 ],2,length,40).
+struct_dt_param_i([ 14,13,3 ],2,decimals,0).
+struct_dt_param_i([ 14,13,3 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,13,3 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,3 ],2,'IntName',topic).
+struct_dt_param_i([ 14,13,3 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,3 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,3 ],2,basedon,'').
+struct_dt_param_i([ 14,13,3 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,3 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,4 ],1,name,message).
+struct_dt_param_i([ 14,13,4 ],1,camelname,message).
+struct_dt_param_i([ 14,13,4 ],1,externalType,'').
+struct_dt_param_i([ 14,13,4 ],1,length,1000).
+struct_dt_param_i([ 14,13,4 ],1,decimals,0).
+struct_dt_param_i([ 14,13,4 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,4 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,4 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,4 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,4 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,4 ],1,basedon,'').
+struct_dt_param_i([ 14,13,4 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,4 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,5 ],1,name,message).
+struct_dt_param_i([ 14,13,5 ],1,camelname,message).
+struct_dt_param_i([ 14,13,5 ],1,externalType,'').
+struct_dt_param_i([ 14,13,5 ],1,length,1000).
+struct_dt_param_i([ 14,13,5 ],1,decimals,0).
+struct_dt_param_i([ 14,13,5 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,5 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,5 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,5 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,5 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,5 ],1,basedon,'').
+struct_dt_param_i([ 14,13,5 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,5 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,5 ],2,name,topic).
+struct_dt_param_i([ 14,13,5 ],2,camelname,topic).
+struct_dt_param_i([ 14,13,5 ],2,externalType,'').
+struct_dt_param_i([ 14,13,5 ],2,length,40).
+struct_dt_param_i([ 14,13,5 ],2,decimals,0).
+struct_dt_param_i([ 14,13,5 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,13,5 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,5 ],2,'IntName',topic).
+struct_dt_param_i([ 14,13,5 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,5 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,5 ],2,basedon,'').
+struct_dt_param_i([ 14,13,5 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,5 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,6 ],1,name,message).
+struct_dt_param_i([ 14,13,6 ],1,camelname,message).
+struct_dt_param_i([ 14,13,6 ],1,externalType,'').
+struct_dt_param_i([ 14,13,6 ],1,length,1000).
+struct_dt_param_i([ 14,13,6 ],1,decimals,0).
+struct_dt_param_i([ 14,13,6 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,6 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,6 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,6 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,6 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,6 ],1,basedon,'').
+struct_dt_param_i([ 14,13,6 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,6 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,7 ],1,name,message).
+struct_dt_param_i([ 14,13,7 ],1,camelname,message).
+struct_dt_param_i([ 14,13,7 ],1,externalType,'').
+struct_dt_param_i([ 14,13,7 ],1,length,1000).
+struct_dt_param_i([ 14,13,7 ],1,decimals,0).
+struct_dt_param_i([ 14,13,7 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,7 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,7 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,7 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,7 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,7 ],1,basedon,'').
+struct_dt_param_i([ 14,13,7 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,7 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,7 ],2,name,topic).
+struct_dt_param_i([ 14,13,7 ],2,camelname,topic).
+struct_dt_param_i([ 14,13,7 ],2,externalType,'').
+struct_dt_param_i([ 14,13,7 ],2,length,40).
+struct_dt_param_i([ 14,13,7 ],2,decimals,0).
+struct_dt_param_i([ 14,13,7 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,13,7 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,7 ],2,'IntName',topic).
+struct_dt_param_i([ 14,13,7 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,7 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,7 ],2,basedon,'').
+struct_dt_param_i([ 14,13,7 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,7 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,8 ],1,name,message).
+struct_dt_param_i([ 14,13,8 ],1,camelname,message).
+struct_dt_param_i([ 14,13,8 ],1,externalType,'').
+struct_dt_param_i([ 14,13,8 ],1,length,1000).
+struct_dt_param_i([ 14,13,8 ],1,decimals,0).
+struct_dt_param_i([ 14,13,8 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,8 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,8 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,8 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,8 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,8 ],1,basedon,'').
+struct_dt_param_i([ 14,13,8 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,8 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,9 ],1,name,message).
+struct_dt_param_i([ 14,13,9 ],1,camelname,message).
+struct_dt_param_i([ 14,13,9 ],1,externalType,'').
+struct_dt_param_i([ 14,13,9 ],1,length,1000).
+struct_dt_param_i([ 14,13,9 ],1,decimals,0).
+struct_dt_param_i([ 14,13,9 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,9 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,9 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,9 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,9 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,9 ],1,basedon,'').
+struct_dt_param_i([ 14,13,9 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,9 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,9 ],2,name,topic).
+struct_dt_param_i([ 14,13,9 ],2,camelname,topic).
+struct_dt_param_i([ 14,13,9 ],2,externalType,'').
+struct_dt_param_i([ 14,13,9 ],2,length,40).
+struct_dt_param_i([ 14,13,9 ],2,decimals,0).
+struct_dt_param_i([ 14,13,9 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,13,9 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,9 ],2,'IntName',topic).
+struct_dt_param_i([ 14,13,9 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,9 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,9 ],2,basedon,'').
+struct_dt_param_i([ 14,13,9 ],2,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,9 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,10 ],1,name,message).
+struct_dt_param_i([ 14,13,10 ],1,camelname,message).
+struct_dt_param_i([ 14,13,10 ],1,externalType,'').
+struct_dt_param_i([ 14,13,10 ],1,length,1000).
+struct_dt_param_i([ 14,13,10 ],1,decimals,0).
+struct_dt_param_i([ 14,13,10 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,10 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,10 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,10 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,10 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,10 ],1,basedon,'').
+struct_dt_param_i([ 14,13,10 ],1,'ExoItemExtTypeNETCORE','System.String').
+struct_dt_param_i([ 14,13,10 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,11 ],1,name,message).
+struct_dt_param_i([ 14,13,11 ],1,camelname,message).
+struct_dt_param_i([ 14,13,11 ],1,externalType,'').
+struct_dt_param_i([ 14,13,11 ],1,length,1000).
+struct_dt_param_i([ 14,13,11 ],1,decimals,0).
+struct_dt_param_i([ 14,13,11 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,11 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,11 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,11 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,11 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,11 ],1,basedon,'').
+struct_dt_param_i([ 14,13,11 ],1,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,11 ],1,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,11 ],2,name,topic).
+struct_dt_param_i([ 14,13,11 ],2,camelname,topic).
+struct_dt_param_i([ 14,13,11 ],2,externalType,'').
+struct_dt_param_i([ 14,13,11 ],2,length,40).
+struct_dt_param_i([ 14,13,11 ],2,decimals,0).
+struct_dt_param_i([ 14,13,11 ],2,type,[ 13,40,0 ]).
+struct_dt_param_i([ 14,13,11 ],2,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,11 ],2,'IntName',topic).
+struct_dt_param_i([ 14,13,11 ],2,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,11 ],2,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,11 ],2,basedon,'').
+struct_dt_param_i([ 14,13,11 ],2,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,11 ],2,'ExoItemExtTypeJAVA','').
+struct_dt_param_i([ 14,13,12 ],1,name,message).
+struct_dt_param_i([ 14,13,12 ],1,camelname,message).
+struct_dt_param_i([ 14,13,12 ],1,externalType,'').
+struct_dt_param_i([ 14,13,12 ],1,length,1000).
+struct_dt_param_i([ 14,13,12 ],1,decimals,0).
+struct_dt_param_i([ 14,13,12 ],1,type,[ 13,1000,0 ]).
+struct_dt_param_i([ 14,13,12 ],1,'ExoParamAccessType',in).
+struct_dt_param_i([ 14,13,12 ],1,'IntName',message).
+struct_dt_param_i([ 14,13,12 ],1,'ExoItemDesc','').
+struct_dt_param_i([ 14,13,12 ],1,'ExoItemType','VarChar').
+struct_dt_param_i([ 14,13,12 ],1,basedon,'').
+struct_dt_param_i([ 14,13,12 ],1,'ExoItemExtTypeNETCORE','').
+struct_dt_param_i([ 14,13,12 ],1,'ExoItemExtTypeJAVA','').
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,103,'PCORS','INTERNAL','Secure').
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','PACKAGE','com.genexuscore').
+module_info_i('GeneXus\Common','PackageName','GeneXus.jar').
+module_info_i('GeneXus\Common\Configuration','PACKAGE','com.genexuscore').
+module_info_i('GeneXus\Common\Configuration','PackageName','GeneXus.jar').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

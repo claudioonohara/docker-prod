@@ -1,0 +1,64 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_10-184260</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>71</ObjId>
+<ObjName>PCRLotacaoPut</ObjName>
+<ObjDesc>PCRLotacao Put</ObjDesc>
+<ObjPgmName>PCRLotacaoPut</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0022</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>2</Line></Location>
+<Message>
+<Token>Input-only parameter </Token>
+<Variable>
+<VarId>Sdtcrlotacao</VarId>
+<VarName>&amp;SDTCRLotacao</VarName></Variable>
+<Token> should not be assigned.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0022</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>7</Line></Location>
+<Message>
+<Token>Input-only parameter </Token>
+<Variable>
+<VarId>Lot_id</VarId>
+<VarName>&amp;lot_id</VarName></Variable>
+<Token> should not be assigned.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>12</GenId>
+<GenName>Default (Java)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Lot_id</VarId>
+<VarName>&amp;lot_id</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Sdtcrlotacao</VarId>
+<VarName>&amp;SDTCRLotacao</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Retornosdtcrlotacao</VarId>
+<VarName>&amp;RetornoSDTCRLotacao</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Messages</VarId>
+<VarName>&amp;Messages</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

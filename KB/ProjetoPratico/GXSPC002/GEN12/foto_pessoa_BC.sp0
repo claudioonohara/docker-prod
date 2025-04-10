@@ -1,0 +1,550 @@
+spec_i([ trn,3,foto_pessoa,foto_pessoa_BC,[],eng,'18_0_10-184260' ]).
+ 
+struct_i(3,0,[],[]).
+ 
+level_i(3,[ 3,[ [ 3,many ],[ 1,one ] ],[ 10 ],[],[],[],[ 10 ],'IFOTO_PESSOA',[ 3,[] ],[] ]).
+ 
+tw_i(3,[ [ 1,[ [ 3,1,1 ] ] ] ]).
+ 
+lwi_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(3,[ [ [ 3,10 ],[ 3,11 ],[ 3,12 ],[ 3,13 ],[ 3,31 ],[ 3,40000 ],[ 3,1 ] ] ]).
+ 
+las_i(3,[ [ 10,11,1,12,13,31,40000 ] ]).
+ 
+lac_i(3,[ [ 10,1,11,12,13,31 ] ]).
+ 
+ 
+ 
+cls_i([ 25,80 ],[ 0,0 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'POSTGRESQL_EXTENSIONS','')).
+rule_i(0,datastore(1,'POSTGRESQL_VERSION','8_3')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'DS_READ_REPLICA','No')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD',root)).
+rule_i(0,datastore(1,'USER_ID',postgres)).
+rule_i(0,datastore(1,'CS_CNTDLG','2')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','4555')).
+rule_i(0,datastore(1,'CS_SERVER','192.168.68.113')).
+rule_i(0,datastore(1,'CS_DBNAME',projetoPraticoDB)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','org.postgresql.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','JDBC')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','15')).
+rule_i(0,datastore(1,'DBMS',15)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PKSupFKs',[])).
+rule_i(0,prop(gxtest_ignoreForTestCoverage,'0')).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','KnowledgeBase')).
+rule_i(0,prop('FullyQualifiedName',foto_pessoa)).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER','')).
+rule_i(0,prop('SEARCHABLE','UMPV')).
+rule_i(0,prop('MTIER_OPT','Yes')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_LAST','UMPV')).
+rule_i(0,prop('KEY_FIRST','UMPV')).
+rule_i(0,prop('KEY_SELECT','UMPV')).
+rule_i(0,prop('KEY_DISPLAY','UMPV')).
+rule_i(0,prop('KEY_DELETE','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_UPDATE','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_RETRIEVE','UMPV')).
+rule_i(0,prop('KEY_NEXT','UMPV')).
+rule_i(0,prop('KEY_PREVIOUS','UMPV')).
+rule_i(0,prop('KEY_INSERT','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_PROMPT','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_CHECK','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebFormDefaults','0')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('FIELD_TO_FIELD','UMPV')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('IsDwhTrn','0')).
+rule_i(0,prop(idDynTrnUpdatePolicy,idDynTrnUpdatePolicy_UPDATABLE)).
+rule_i(0,prop(idIsDynTrn,'0')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'General.UI.MasterUnanimoSidebar'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop(idFormLayout,'UnanimoTemplate')).
+rule_i(0,prop('Theme',o(102,'ProjetoPratico'))).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
+rule_i(0,prop('ExternalNamespace','ProjetoPratico')).
+rule_i(0,prop('ExternalName',foto_pessoa)).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop(idISBUSINESSCOMPONENT,'-1')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc',foto_pessoa)).
+rule_i(0,prop('ObjName',foto_pessoa)).
+rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
+rule_i(0,maingen(12)).
+rule_i(3,rule([ a(8,[ t(o(1,'PExtractBucketName'),28),t(10,2) ]) ],[ t(insert,1) ],[ insert ],[ 10 ])).
+rule_i(3,rule([ a(19,[ [ 1 ],msg([ t('"No matching ''pessoa''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 1 ])).
+ 
+a_i(1,3,f,11,[ binsert ],[ [ insert ],[ t('now(',1),t(')',4),t('IF',17),t(insert,1),t(';',18) ] ]).
+a_i(2,3,b,2,[ trn ],[ [ insert ],[ a(8,[ t(o(1,'PExtractBucketName'),28),t(10,2) ]) ],[ t(insert,1) ] ]).
+a_i(3,3,t,3,[],[ [ [ [],10,10 ] ],'IFOTO_PESSOA',[] ]).
+a_i(4,3,r,1,[],[ [ [ 3,1,1 ] ],'IPESSOA',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,11).
+v_i(b,i,2,10).
+v_i(b,o,2,[]).
+v_i(t,i,3,10).
+v_i(t,o,3,11).
+v_i(t,o,3,12).
+v_i(t,o,3,13).
+v_i(t,o,3,31).
+v_i(t,o,3,40000).
+v_i(t,o,3,1).
+v_i(r,i,4,1).
+v_i(r,o,4,[]).
+ 
+act_info_i(1,[ [ 11 ] ]).
+ 
+ 
+ 
+ 
+ 
+attri_i(31,[ fp_foto,bits,4,0,'',0,fp_foto,'',0 ]).
+attri_i(13,[ fp_hash,svchar,150,0,'',0,fp_hash,'',0 ]).
+attri_i(12,[ fp_bucket,svchar,50,0,'',0,fp_bucket,'',0 ]).
+attri_i(1,[ pes_id,int,8,0,'ZZZZZZZ9',0,pes_id,'',0 ]).
+attri_i(11,[ fp_data,date,8,0,'99/99/99',0,fp_data,'',0 ]).
+attri_i(10,[ fp_id,int,8,0,'ZZZZZZZ9',0,fp_id,'',0 ]).
+attri_i(40000,[ fp_foto_GXI,svchar,2048,0,'',0,'',[],0 ]).
+attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
+attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
+ 
+table_i(1,[ pessoa,[ 1 ],pessoa,pessoa ]).
+table_i(3,[ foto_pessoa,[ 10,1,11,12,13,31,40000 ],foto_pessoa,foto_pessoa ]).
+ 
+index_i(3,[ 'IFOTO_PESSOA',u,[ 10 ],'Ifoto_pessoa' ]).
+index_i(1,[ 'IPESSOA',u,[ 1 ],'Ipessoa' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,31,fp_foto_GXI,[ svchar,2048,0,0 ]).
+ 
+upd_i(3,3,i,[ [ 11,12,13,31,40000,1 ],[],'IFOTO_PESSOA',[ [ [],10,10 ] ] ]).
+upd_i(3,3,u,[ [ 11,12,13,31,40000,1 ],[],'IFOTO_PESSOA',[] ]).
+upd_i(3,3,d,[ [],[],'IFOTO_PESSOA',[] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(42,9).
+ 
+att_prop_i(2,10,'HORIZONTAL_DESCRIPTION',fp_id,d).
+att_prop_i(2,10,'ExternalName',fp_id,d).
+att_prop_i(2,10,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,10,'EmptyAsNull','Yes',d).
+att_prop_i(2,10,idBasedOn,'',d).
+att_prop_i(2,10,'AUTONUMBER','-1',v).
+att_prop_i(2,10,'AUTONUMBER_START','1',d).
+att_prop_i(2,10,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,10,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,10,'AttRegEx','',d).
+att_prop_i(2,10,'AttValidationFailedMsg','',d).
+att_prop_i(2,10,'DownloadOffline','0',d).
+att_prop_i(2,10,'VarServiceExtName','',d).
+att_prop_i(2,10,'FullName',fp_id,v).
+att_prop_i(2,1,'HORIZONTAL_DESCRIPTION',pes_id,d).
+att_prop_i(2,1,'ExternalName',pes_id,d).
+att_prop_i(2,1,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,'',d).
+att_prop_i(2,1,'AUTONUMBER','-1',v).
+att_prop_i(2,1,'AUTONUMBER_START','1',d).
+att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'DownloadOffline','0',d).
+att_prop_i(2,1,'VarServiceExtName','',d).
+att_prop_i(2,1,'FullName',pes_id,v).
+att_prop_i(2,11,'HORIZONTAL_DESCRIPTION',fp_data,d).
+att_prop_i(2,11,'ExternalName',fp_data,d).
+att_prop_i(2,11,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,11,'EmptyAsNull','Yes',d).
+att_prop_i(2,11,idBasedOn,'',d).
+att_prop_i(2,11,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,11,'AttRegEx','',d).
+att_prop_i(2,11,'AttValidationFailedMsg','',d).
+att_prop_i(2,11,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,11,'DownloadOffline','0',d).
+att_prop_i(2,11,'VarServiceExtName','',d).
+att_prop_i(2,11,'FullName',fp_data,v).
+att_prop_i(2,12,'HORIZONTAL_DESCRIPTION',fp_bucket,d).
+att_prop_i(2,12,'ExternalName',fp_bucket,d).
+att_prop_i(2,12,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,12,'EmptyAsNull','Yes',d).
+att_prop_i(2,12,idBasedOn,'',d).
+att_prop_i(2,12,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,12,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,12,'AttRegEx','',d).
+att_prop_i(2,12,'AttValidationFailedMsg','',d).
+att_prop_i(2,12,'DownloadOffline','0',d).
+att_prop_i(2,12,'VarServiceExtName','',d).
+att_prop_i(2,12,'FullName',fp_bucket,v).
+att_prop_i(2,13,'HORIZONTAL_DESCRIPTION',fp_hash,d).
+att_prop_i(2,13,'ExternalName',fp_hash,d).
+att_prop_i(2,13,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,13,'EmptyAsNull','Yes',d).
+att_prop_i(2,13,idBasedOn,'',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,13,'AttRegEx','',d).
+att_prop_i(2,13,'AttValidationFailedMsg','',d).
+att_prop_i(2,13,'DownloadOffline','0',d).
+att_prop_i(2,13,'VarServiceExtName','',d).
+att_prop_i(2,13,'FullName',fp_hash,v).
+att_prop_i(2,31,'HORIZONTAL_DESCRIPTION',fp_foto,d).
+att_prop_i(2,31,'ExternalName',fp_foto,d).
+att_prop_i(2,31,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,31,'EmptyAsNull','Yes',d).
+att_prop_i(2,31,'ExternalStorage','-1',v).
+att_prop_i(2,31,idBasedOn,'',d).
+att_prop_i(2,31,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,31,'AttRegEx','',d).
+att_prop_i(2,31,'AttValidationFailedMsg','',d).
+att_prop_i(2,31,'DownloadOffline','0',d).
+att_prop_i(2,31,'VarServiceExtName','',d).
+att_prop_i(2,31,'FullName',fp_foto,v).
+att_prop_i(2,40000,'ExternalName','',d).
+att_prop_i(2,40000,'ExternalNamespace','',d).
+att_prop_i(2,40000,'EmptyAsNull','Yes',d).
+att_prop_i(2,40000,idBasedOn,'',d).
+att_prop_i(2,40000,'AUTONUMBER','0',d).
+att_prop_i(2,40000,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,40000,'AttRegEx','',d).
+att_prop_i(2,40000,'AttValidationFailedMsg','',d).
+att_prop_i(2,40000,'FullName','',v).
+ 
+tbl_prop_i(2,3,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 3,[ 1 ] ] ],v).
+tbl_prop_i(2,3,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+ 
+tbl_att_prop_i(2,3,10,'AllowNulls',n).
+tbl_att_prop_i(2,3,10,'AUTONUMBER',y).
+tbl_att_prop_i(2,3,1,'AllowNulls',n).
+tbl_att_prop_i(2,3,11,'AllowNulls',n).
+tbl_att_prop_i(2,3,12,'AllowNulls',n).
+tbl_att_prop_i(2,3,13,'AllowNulls',n).
+tbl_att_prop_i(2,3,31,'AllowNulls',n).
+tbl_att_prop_i(2,3,40000,'AllowNulls',n).
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
+ 
+ 
+i_tbl_best_trn(3,[ 3,1,foto_pessoa,foto_pessoa,[] ]).
+i_tbl_best_trn(1,[ 1,1,pessoa,pessoa,[] ]).
+ 
+ 
+ 
+trn_level_i(3,[ [ 10,1,11,12,13,31,40000 ],foto_pessoa,foto_pessoa,foto_pessoa,'',11 ]).
+ 
+struct_dt_i([ 0,3,0 ],name,foto_pessoa).
+struct_dt_i([ 0,3,0 ],namespace,'ProjetoPratico').
+struct_dt_i([ 0,3,0 ],significantName,foto_pessoa).
+struct_dt_i([ 0,3,0 ],'ObjName',foto_pessoa).
+struct_dt_i([ 0,3,0 ],'ObjDesc',foto_pessoa).
+struct_dt_i([ 0,3,0 ],'ExternalName',foto_pessoa).
+struct_dt_i([ 0,3,0 ],'ExternalNamespace','ProjetoPratico').
+struct_dt_i([ 0,3,0 ],key,[ 10 ]).
+struct_dt_i([ 0,3,0 ],lvl,3).
+struct_dt_i([ 26,1,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,1,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,1,0 ],'ObjName','Messages').
+struct_dt_i([ 26,1,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,1,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,1,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,1,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,1,0 ],collection,'True').
+struct_dt_i([ 26,1,0 ],datatype,[ 26,1,1 ]).
+struct_dt_i([ 26,1,0 ],'CollectionItemName','Message').
+struct_dt_i([ 26,1,0 ],'XmlName','').
+struct_dt_i([ 26,1,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,1,0 ],'XmlNamespace','').
+struct_dt_i([ 26,1,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,1,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,1,0 ],'JsonName','').
+struct_dt_i([ 26,1,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,1,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,1,0 ],isexternal,'True').
+struct_dt_i([ 26,1,1 ],name,'Message').
+struct_dt_i([ 26,1,1 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 0,3,0 ],fullname,foto_pessoa).
+struct_dt_i([ 26,1,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,1,1 ],fullname,'GeneXus\Common\Messages.Message').
+ 
+struct_dt_elem_i([ 0,3,0 ],1,name,'Fp_id').
+struct_dt_elem_i([ 0,3,0 ],1,camelname,fp_id).
+struct_dt_elem_i([ 0,3,0 ],1,length,8).
+struct_dt_elem_i([ 0,3,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],1,sign,0).
+struct_dt_elem_i([ 0,3,0 ],1,type,[ 4,8,0 ]).
+struct_dt_elem_i([ 0,3,0 ],1,pic,'ZZZZZZZ9').
+struct_dt_elem_i([ 0,3,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],1,attributeid,'10').
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalName',fp_id).
+struct_dt_elem_i([ 0,3,0 ],1,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,3,0 ],2,name,'Pes_id').
+struct_dt_elem_i([ 0,3,0 ],2,camelname,pes_id).
+struct_dt_elem_i([ 0,3,0 ],2,length,8).
+struct_dt_elem_i([ 0,3,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],2,sign,0).
+struct_dt_elem_i([ 0,3,0 ],2,type,[ 4,8,0 ]).
+struct_dt_elem_i([ 0,3,0 ],2,pic,'ZZZZZZZ9').
+struct_dt_elem_i([ 0,3,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],2,attributeid,'1').
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalName',pes_id).
+struct_dt_elem_i([ 0,3,0 ],2,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,3,0 ],3,name,'Fp_data').
+struct_dt_elem_i([ 0,3,0 ],3,camelname,fp_data).
+struct_dt_elem_i([ 0,3,0 ],3,length,8).
+struct_dt_elem_i([ 0,3,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],3,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,3,0 ],3,pic,'99/99/99').
+struct_dt_elem_i([ 0,3,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],3,attributeid,'11').
+struct_dt_elem_i([ 0,3,0 ],3,'ExternalName',fp_data).
+struct_dt_elem_i([ 0,3,0 ],3,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,3,0 ],4,name,'Fp_bucket').
+struct_dt_elem_i([ 0,3,0 ],4,camelname,fp_bucket).
+struct_dt_elem_i([ 0,3,0 ],4,length,50).
+struct_dt_elem_i([ 0,3,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],4,type,[ 13,50,0 ]).
+struct_dt_elem_i([ 0,3,0 ],4,pic,'').
+struct_dt_elem_i([ 0,3,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],4,attributeid,'12').
+struct_dt_elem_i([ 0,3,0 ],4,'ExternalName',fp_bucket).
+struct_dt_elem_i([ 0,3,0 ],4,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,3,0 ],5,name,'Fp_hash').
+struct_dt_elem_i([ 0,3,0 ],5,camelname,fp_hash).
+struct_dt_elem_i([ 0,3,0 ],5,length,150).
+struct_dt_elem_i([ 0,3,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],5,type,[ 13,150,0 ]).
+struct_dt_elem_i([ 0,3,0 ],5,pic,'').
+struct_dt_elem_i([ 0,3,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],5,attributeid,'13').
+struct_dt_elem_i([ 0,3,0 ],5,'ExternalName',fp_hash).
+struct_dt_elem_i([ 0,3,0 ],5,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,3,0 ],6,name,'Fp_foto').
+struct_dt_elem_i([ 0,3,0 ],6,camelname,fp_foto).
+struct_dt_elem_i([ 0,3,0 ],6,length,4).
+struct_dt_elem_i([ 0,3,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],6,type,[ 7,4,0 ]).
+struct_dt_elem_i([ 0,3,0 ],6,pic,'').
+struct_dt_elem_i([ 0,3,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],6,attributeid,'31').
+struct_dt_elem_i([ 0,3,0 ],6,'ExternalName',fp_foto).
+struct_dt_elem_i([ 0,3,0 ],6,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,3,0 ],7,name,'Fp_foto_gxi').
+struct_dt_elem_i([ 0,3,0 ],7,camelname,fp_foto_GXI).
+struct_dt_elem_i([ 0,3,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,3,0 ],7,isadd,'True').
+struct_dt_elem_i([ 0,3,0 ],7,length,2048).
+struct_dt_elem_i([ 0,3,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,3,0 ],7,type,[ 13,2048,0 ]).
+struct_dt_elem_i([ 26,1,1 ],1,name,'Id').
+struct_dt_elem_i([ 26,1,1 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,1,1 ],1,length,128).
+struct_dt_elem_i([ 26,1,1 ],1,decimals,0).
+struct_dt_elem_i([ 26,1,1 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,1,1 ],1,pic,'').
+struct_dt_elem_i([ 26,1,1 ],1,collection,'False').
+struct_dt_elem_i([ 26,1,1 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,1,1 ],1,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlName','').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,1,1 ],1,soaptype,'').
+struct_dt_elem_i([ 26,1,1 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,1,1 ],1,'JsonName','').
+struct_dt_elem_i([ 26,1,1 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,1,1 ],2,name,'Type').
+struct_dt_elem_i([ 26,1,1 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,1,1 ],2,basedon,7).
+struct_dt_elem_i([ 26,1,1 ],2,length,2).
+struct_dt_elem_i([ 26,1,1 ],2,decimals,0).
+struct_dt_elem_i([ 26,1,1 ],2,sign,0).
+struct_dt_elem_i([ 26,1,1 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,1,1 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,1,1 ],2,collection,'False').
+struct_dt_elem_i([ 26,1,1 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,1,1 ],2,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlName','').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,1,1 ],2,soaptype,'').
+struct_dt_elem_i([ 26,1,1 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,1,1 ],2,'JsonName','').
+struct_dt_elem_i([ 26,1,1 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,1,1 ],3,name,'Description').
+struct_dt_elem_i([ 26,1,1 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,1,1 ],3,length,256).
+struct_dt_elem_i([ 26,1,1 ],3,decimals,0).
+struct_dt_elem_i([ 26,1,1 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,1,1 ],3,pic,'').
+struct_dt_elem_i([ 26,1,1 ],3,collection,'False').
+struct_dt_elem_i([ 26,1,1 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,1,1 ],3,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlName','').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,1,1 ],3,soaptype,'').
+struct_dt_elem_i([ 26,1,1 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,1,1 ],3,'JsonName','').
+struct_dt_elem_i([ 26,1,1 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,1,1 ],2,pic,'ZZZZZZZ9').
+struct_dt_elem_i([ 0,3,0 ],7,attributeid,'40000').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,45,'PEXTRACTBUCKETNAME',[ [ int,8,0,0 ] ],[ [ fp_id,in,[] ] ]).
+ 
+pgm_callprotocol_i(trn,3,'FOTO_PESSOA_BC','INTERNAL','Secure').
+pgm_callprotocol_i(proc,45,'PEXTRACTBUCKETNAME','INTERNAL','Secure').
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','PACKAGE','com.genexuscore').
+module_info_i('GeneXus\Common','PackageName','GeneXus.jar').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

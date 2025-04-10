@@ -1,0 +1,11 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_ProjetoPratico</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>WIN10GX18\SQLEXPRESS</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>C:\KBs\ProjetoPratico</Directory>
+	<DataFile>GX_KB_ProjetoPratico.mdf</DataFile>
+	<LogFile>GX_KB_ProjetoPratico_log.ldf</LogFile>
+	<HostName>WIN10GX18</HostName>
+	<DetachOnClose>False</DetachOnClose>
+</ConnectionInformation>

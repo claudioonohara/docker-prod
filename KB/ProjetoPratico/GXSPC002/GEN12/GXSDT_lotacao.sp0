@@ -1,0 +1,85 @@
+ 
+spec_i([ sdt,[ 0,9,0 ],lotacao,lotacao,0,eng,'18_0_10-184260' ]).
+ 
+struct_dt_i([ 0,9,0 ],name,lotacao).
+struct_dt_i([ 0,9,0 ],namespace,'ProjetoPratico').
+struct_dt_i([ 0,9,0 ],significantName,lotacao).
+struct_dt_i([ 0,9,0 ],'ObjName',lotacao).
+struct_dt_i([ 0,9,0 ],'ObjDesc',lotacao).
+struct_dt_i([ 0,9,0 ],'ExternalName',lotacao).
+struct_dt_i([ 0,9,0 ],'ExternalNamespace','ProjetoPratico').
+struct_dt_i([ 0,9,0 ],key,[ 25 ]).
+struct_dt_i([ 0,9,0 ],lvl,7).
+struct_dt_i([ 0,9,0 ],fullname,lotacao).
+ 
+struct_dt_elem_i([ 0,9,0 ],1,name,'Lot_id').
+struct_dt_elem_i([ 0,9,0 ],1,camelname,lot_id).
+struct_dt_elem_i([ 0,9,0 ],1,length,8).
+struct_dt_elem_i([ 0,9,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,9,0 ],1,sign,0).
+struct_dt_elem_i([ 0,9,0 ],1,type,[ 4,8,0 ]).
+struct_dt_elem_i([ 0,9,0 ],1,pic,'ZZZZZZZ9').
+struct_dt_elem_i([ 0,9,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,9,0 ],1,attributeid,'25').
+struct_dt_elem_i([ 0,9,0 ],1,'ExternalName',lot_id).
+struct_dt_elem_i([ 0,9,0 ],1,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,9,0 ],2,name,'Pes_id').
+struct_dt_elem_i([ 0,9,0 ],2,camelname,pes_id).
+struct_dt_elem_i([ 0,9,0 ],2,length,8).
+struct_dt_elem_i([ 0,9,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,9,0 ],2,sign,0).
+struct_dt_elem_i([ 0,9,0 ],2,type,[ 4,8,0 ]).
+struct_dt_elem_i([ 0,9,0 ],2,pic,'ZZZZZZZ9').
+struct_dt_elem_i([ 0,9,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,9,0 ],2,attributeid,'1').
+struct_dt_elem_i([ 0,9,0 ],2,'ExternalName',pes_id).
+struct_dt_elem_i([ 0,9,0 ],2,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,9,0 ],3,name,'Unid_id').
+struct_dt_elem_i([ 0,9,0 ],3,camelname,unid_id).
+struct_dt_elem_i([ 0,9,0 ],3,length,8).
+struct_dt_elem_i([ 0,9,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,9,0 ],3,sign,0).
+struct_dt_elem_i([ 0,9,0 ],3,type,[ 4,8,0 ]).
+struct_dt_elem_i([ 0,9,0 ],3,pic,'ZZZZZZZ9').
+struct_dt_elem_i([ 0,9,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,9,0 ],3,attributeid,'7').
+struct_dt_elem_i([ 0,9,0 ],3,'ExternalName',unid_id).
+struct_dt_elem_i([ 0,9,0 ],3,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,9,0 ],4,name,'Lot_data_lotacao').
+struct_dt_elem_i([ 0,9,0 ],4,camelname,lot_data_lotacao).
+struct_dt_elem_i([ 0,9,0 ],4,length,8).
+struct_dt_elem_i([ 0,9,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,9,0 ],4,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,9,0 ],4,pic,'99/99/99').
+struct_dt_elem_i([ 0,9,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,9,0 ],4,attributeid,'26').
+struct_dt_elem_i([ 0,9,0 ],4,'ExternalName',lot_data_lotacao).
+struct_dt_elem_i([ 0,9,0 ],4,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,9,0 ],5,name,'Lot_data_remocao').
+struct_dt_elem_i([ 0,9,0 ],5,camelname,lot_data_remocao).
+struct_dt_elem_i([ 0,9,0 ],5,length,8).
+struct_dt_elem_i([ 0,9,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,9,0 ],5,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,9,0 ],5,pic,'99/99/99').
+struct_dt_elem_i([ 0,9,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,9,0 ],5,attributeid,'27').
+struct_dt_elem_i([ 0,9,0 ],5,'ExternalName',lot_data_remocao).
+struct_dt_elem_i([ 0,9,0 ],5,'ExternalNamespace','ProjetoPratico').
+struct_dt_elem_i([ 0,9,0 ],6,name,'Lot_portaria').
+struct_dt_elem_i([ 0,9,0 ],6,camelname,lot_portaria).
+struct_dt_elem_i([ 0,9,0 ],6,length,100).
+struct_dt_elem_i([ 0,9,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,9,0 ],6,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 0,9,0 ],6,pic,'').
+struct_dt_elem_i([ 0,9,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,9,0 ],6,attributeid,'28').
+struct_dt_elem_i([ 0,9,0 ],6,'ExternalName',lot_portaria).
+struct_dt_elem_i([ 0,9,0 ],6,'ExternalNamespace','ProjetoPratico').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','PACKAGE','com.genexuscore').
+module_info_i('GeneXus\Common','PackageName','GeneXus.jar').

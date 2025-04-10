@@ -1,0 +1,578 @@
+openapi: 3.0.0
+info:
+  title: "Projeto Pratico"
+  version: "20250409220308"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/rest
+paths:
+  /PFotoPessoa/gxobject:
+    post:
+      tags:
+        - PFotoPessoa
+      operationId: "UploadPFotoPessoa"
+      summary: "Upload a binary for PFotoPessoa"
+      responses:
+        200:
+          description: "Successful operation"
+        400:
+          description: "Bad request"
+        500:
+          description: "Internal Server Error"
+  /PFotoPessoa:
+    post:
+      tags:
+        - PFotoPessoa
+      operationId: "PFotoPessoa"
+      summary: "PFoto Pessoa"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PFotoPessoaInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PFotoPessoaOutput"
+        404:
+          description: "Not found"
+components:
+  schemas:
+    PFotoPessoaOutput:
+      properties:
+        foto:
+          type: "string"
+    PFotoPessoaInput:  
+      properties:
+        pes_id:
+          type: "integer"
+          format: "int64"
+        foto:
+          type: "string"
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+    SDTCRLotacao:
+      properties:
+        lot_id:
+          description: "lot_id"
+          type: "integer"
+          format: "int64"
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        unid_id:
+          description: "unid_id"
+          type: "integer"
+          format: "int64"
+        lot_data_lotacao:
+          description: "lot_data_lotacao"
+          type: "string"
+          format: "date"
+        lot_data_remocao:
+          description: "lot_data_remocao"
+          type: "string"
+          format: "date"
+        lot_portaria:
+          description: "lot_portaria"
+          type: "string"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        unid_nome:
+          description: "unid_nome"
+          type: "string"
+        unid_sigla:
+          description: "unid_sigla"
+          type: "string"
+    SDTCRServidorEfetivo:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        pes_idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorEfetivo.endereco_enderecoItem"
+    SDTCRServidorEfetivo.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+      x-gx-level: "SDTCRServidorEfetivo"
+    SDTCRServidorEfetivoAtualiza:
+      properties:
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        pes_idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorEfetivoAtualiza.endereco_enderecoItem"
+    SDTCRServidorEfetivoAtualiza.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+      x-gx-level: "SDTCRServidorEfetivoAtualiza"
+    SDTCRServidorTemporario:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        st_data_admissao:
+          description: "st_data_admissao"
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          description: "st_data_demissao"
+          type: "string"
+          format: "date"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorTemporario.endereco_enderecoItem"
+    SDTCRServidorTemporario.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+      x-gx-level: "SDTCRServidorTemporario"
+    SDTCRServidorTemporarioAtualiza:
+      properties:
+        st_data_admissao:
+          description: "st_data_admissao"
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          description: "st_data_demissao"
+          type: "string"
+          format: "date"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorTemporarioAtualiza.endereco_enderecoItem"
+    SDTCRServidorTemporarioAtualiza.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+      x-gx-level: "SDTCRServidorTemporarioAtualiza"
+    SDTCRUnidade:
+      properties:
+        unid_id:
+          description: "unid_id"
+          type: "integer"
+          format: "int64"
+        unid_nome:
+          description: "unid_nome"
+          type: "string"
+        unid_sigla:
+          description: "unid_sigla"
+          type: "string"
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRUnidade.endereco_enderecoItem"
+    SDTCRUnidade.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+      x-gx-level: "SDTCRUnidade"
+    SDTEfetivosUnidade:
+      properties:
+        PaginaAtual:
+          description: "Pagina Atual"
+          type: "integer"
+          format: "int64"
+        NroPorPagina:
+          description: "Nro Por Pagina"
+          type: "integer"
+          format: "int64"
+        TotalItens:
+          description: "Total Itens"
+          type: "integer"
+          format: "int64"
+        TotalPaginas:
+          description: "Total Paginas"
+          type: "integer"
+          format: "int64"
+        efetivosUnidade:
+          type: array
+          items:
+            description: efetivosUnidadeItem
+            $ref: "#/components/schemas/SDTEfetivosUnidade.efetivosUnidade_efetivosUnidadeItem"
+    SDTEfetivosUnidade.efetivosUnidade_efetivosUnidadeItem:
+      properties:
+        nome:
+          description: "pes_nome"
+          type: "string"
+        idade:
+          description: "pes_idade"
+          type: "integer"
+          format: "int32"
+        unidadeDeLotacao:
+          description: "unid_nome"
+          type: "string"
+        fotografias:
+          type: array
+          items:
+            description: fotografiasItem
+            $ref: "#/components/schemas/SDTEfetivosUnidade.efetivosUnidade.fotografias_fotografiasItem"
+      x-gx-level: "SDTEfetivosUnidade"
+    SDTEfetivosUnidade.efetivosUnidade.fotografias_fotografiasItem:
+      properties:
+        fotografia:
+          description: "fotografia"
+          type: "string"
+      x-gx-level: "SDTEfetivosUnidade.efetivosUnidade"
+    SDTFotoPessoa:
+      properties:
+        fp_id:
+          description: "fp_id"
+          type: "integer"
+          format: "int64"
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        fp_data:
+          description: "fp_data"
+          type: "string"
+          format: "date"
+        fp_bucket:
+          description: "fp_bucket"
+          type: "string"
+        fp_hash:
+          description: "fp_hash"
+          type: "string"
+        fp_foto_link:
+          description: "fp_foto_link"
+          type: "string"
+    SDTServidorEfetivoEnderecoFuncional:
+      properties:
+        PaginaAtual:
+          description: "Pagina Atual"
+          type: "integer"
+          format: "int64"
+        TotalPaginas:
+          description: "Total Paginas"
+          type: "integer"
+          format: "int64"
+        TotalItens:
+          description: "Total Itens"
+          type: "integer"
+          format: "int64"
+        NroPorPagina:
+          description: "Nro Por Pagina"
+          type: "integer"
+          format: "int64"
+        servidor:
+          type: array
+          items:
+            description: servidorItem
+            $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional.servidor_servidorItem"
+    SDTServidorEfetivoEnderecoFuncional.servidor_servidorItem:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        se_matricula:
+          description: "se_matricula"
+          type: "string"
+        lotacao:
+          type: array
+          items:
+            description: lotacaoItem
+            $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional.servidor.lotacao_lotacaoItem"
+      x-gx-level: "SDTServidorEfetivoEnderecoFuncional"
+    SDTServidorEfetivoEnderecoFuncional.servidor.lotacao_lotacaoItem:
+      properties:
+        lot_id:
+          description: "lot_id"
+          type: "integer"
+          format: "int64"
+        lot_data_lotacao:
+          description: "lot_data_lotacao"
+          type: "string"
+          format: "date"
+        lot_data_remocao:
+          description: "lot_data_remocao"
+          type: "string"
+          format: "date"
+        unid_id:
+          description: "unid_id"
+          type: "integer"
+          format: "int64"
+        unid_nome:
+          description: "unid_nome"
+          type: "string"
+        unid_sigla:
+          description: "unid_sigla"
+          type: "string"
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTServidorEfetivoEnderecoFuncional.servidor.lotacao.endereco_enderecoItem"
+      x-gx-level: "SDTServidorEfetivoEnderecoFuncional.servidor"
+    SDTServidorEfetivoEnderecoFuncional.servidor.lotacao.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+      x-gx-level: "SDTServidorEfetivoEnderecoFuncional.servidor.lotacao"

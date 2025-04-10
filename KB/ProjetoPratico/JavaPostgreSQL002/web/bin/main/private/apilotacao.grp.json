@@ -1,0 +1,47 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APILotacao",
+"BasePath":"",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"lotacao__post",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_lotacao__post",
+"Implementation":"PCRLotacaoPost",
+"PathRegexp":"lotacao",
+"Path":"lotacao"
+
+},
+{
+"Verb":"PUT",
+"PathRegexp":"lotacao/([^/]+)",
+"Path":"lotacao/{lot_id}",
+"Name":"lotacao__put",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_lotacao__put",
+"Implementation":"PCRLotacaoPut"
+},
+{
+"Verb":"GET",
+"PathRegexp":"lotacao/([^/]+)",
+"Path":"lotacao/{lot_id}",
+"Name":"lotacao__get",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_lotacao__get",
+"Implementation":"PBuscaCRLotacao"
+},
+{
+"Verb":"DELETE",
+"PathRegexp":"lotacao/([^/]+)",
+"Path":"lotacao/{lot_id}",
+"Name":"lotacao__delete",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_lotacao__delete",
+"Implementation":"PCRLotacaoDelete"
+}]}

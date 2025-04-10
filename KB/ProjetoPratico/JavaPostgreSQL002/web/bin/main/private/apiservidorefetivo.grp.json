@@ -1,0 +1,47 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIServidorEfetivo",
+"BasePath":"",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"servidorefetivo__post",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_servidorefetivo__post",
+"Implementation":"PCRServidorEfetivoPost",
+"PathRegexp":"servidorefetivo",
+"Path":"servidorefetivo"
+
+},
+{
+"Verb":"PUT",
+"PathRegexp":"servidorEfetivo/([^/]+)/([^/]+)",
+"Path":"servidorEfetivo/{pes_id}/{se_matricula}",
+"Name":"servidorefetivo__put",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_servidorefetivo__put",
+"Implementation":"PCRServidorEfetivoPut"
+},
+{
+"Verb":"GET",
+"PathRegexp":"servidorEfetivo/([^/]+)/([^/]+)",
+"Path":"servidorEfetivo/{pes_id}/{se_matricula}",
+"Name":"servidorefetivo__get",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_servidorefetivo__get",
+"Implementation":"PBuscaCRServidorEfetivo"
+},
+{
+"Verb":"DELETE",
+"PathRegexp":"servidorEfetivo/([^/]+)/([^/]+)",
+"Path":"servidorEfetivo/{pes_id}/{se_matricula}",
+"Name":"servidorefetivo__delete",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_servidorefetivo__delete",
+"Implementation":"PCRServidorEfetivoDelete"
+}]}

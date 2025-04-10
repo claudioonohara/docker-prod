@@ -1,0 +1,142 @@
+ 
+ 
+ 
+pgm_main_i(svcgrp,4,'APISERVIDORTEMPORARIO',[ 12,'APISERVIDORTEMPORARIO','APIServidor Temporario','','','','' ]).
+pgm_main_i(svcgrp,10,'APICONSULTAEFETIVOSUNIDADE',[ 12,'APICONSULTAEFETIVOSUNIDADE','APIConsulta Efetivos Unidade','','','','' ]).
+pgm_main_i(svcgrp,12,'APIIMAGENS',[ 12,'APIIMAGENS','APIImagens','','','','' ]).
+pgm_main_i(proc,44,'STORAGEAPISAMPLE',[ 12,'ASTORAGEAPISAMPLE','Storage APISample','','','','CLINE' ]).
+pgm_main_i(proc,108,'PVALIDTOKEN',[ 12,'APVALIDTOKEN','PValid Token','','','','INTERNAL' ]).
+pgm_main_i(svcgrp,1,'APISERVIDOREFETIVO',[ 12,'APISERVIDOREFETIVO','APIServidor Efetivo','','','','' ]).
+pgm_main_i(svcgrp,3,'APISERVIDORTEMPORARIO',[ 12,'APISERVIDORTEMPORARIO','APIServidor Temporario','','','','' ]).
+pgm_main_i(svcgrp,5,'APIUNIDADE',[ 12,'APIUNIDADE','APIUnidade','','','','' ]).
+pgm_main_i(svcgrp,7,'APIAUTH',[ 12,'APIAUTH','APIAuth','','','','' ]).
+pgm_main_i(svcgrp,9,'APIFOTOPESSOA',[ 12,'APIFOTOPESSOA','APIFoto Pessoa','','','','' ]).
+pgm_main_i(svcgrp,8,'APICONSULTA',[ 12,'APICONSULTA','APIConsulta','','','','' ]).
+pgm_main_i(svcgrp,11,'APIVARIAVEL',[ 12,'APIVARIAVEL','APIVariavel','','','','' ]).
+pgm_main_i(svcgrp,13,'APIUPLOAD',[ 12,'APIUPLOAD','APIUpload','','','','' ]).
+pgm_main_i(svcgrp,6,'APILOTACAO',[ 12,'APILOTACAO','APILotacao','','','','' ]).
+ 
+pgm_prop_i(svcgrp,10,'APICONSULTAEFETIVOSUNIDADE','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,10,'APICONSULTAEFETIVOSUNIDADE','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,10,'APICONSULTAEFETIVOSUNIDADE','SERVICES_BASE_PATH','').
+pgm_prop_i(svcgrp,12,'APIIMAGENS','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,12,'APIIMAGENS','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,12,'APIIMAGENS','SERVICES_BASE_PATH','APIImagens').
+pgm_prop_i(proc,104,'PIMAGENS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,104,'PIMAGENS',idISPRCWEBSERVICE,'-1').
+pgm_prop_i(proc,104,'PIMAGENS','SOAP','0').
+pgm_prop_i(proc,107,'PUPLOADFILES',idISPRCWEBSERVICE,'-1').
+pgm_prop_i(proc,107,'PUPLOADFILES','SOAP','0').
+pgm_prop_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP','OutputSDT',o(26,'GeneXusUnanimo\SidebarItems')).
+pgm_prop_i(proc,46,'PFOTOPESSOA','SOAP_NAMESPACE','ProjetoPratico').
+pgm_prop_i(proc,46,'PFOTOPESSOA',idISPRCWEBSERVICE,'-1').
+pgm_prop_i(proc,47,'PWEBFOTO','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,110,'FILTER\AUTHTOKENFILTER','GENERATE','No').
+pgm_prop_i(proc,111,'FILTER\FILTERCONFIG','GENERATE','No').
+pgm_prop_i(trn,2,'UNIDADE',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,1,'PESSOA',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,3,'FOTO_PESSOA',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,5,'ENDERECO',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,6,'PESSOA_ENDERECO',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,7,'SERVIDOR_TEMPORARIO',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,4,'CIDADE',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,8,'SERVIDOR_EFETIVO',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,9,'LOTACAO',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,10,'UNIDADE_ENDERECO',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,2,'GENERAL\UI\MASTERPROMPT','WEB_COMP','Master').
+pgm_prop_i(svcgrp,1,'APISERVIDOREFETIVO','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,1,'APISERVIDOREFETIVO','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,1,'APISERVIDOREFETIVO','SERVICES_BASE_PATH','').
+pgm_prop_i(web,1,'GENERAL\UI\MASTERUNANIMOSIDEBAR','WEB_COMP','Master').
+pgm_prop_i(svcgrp,3,'APISERVIDORTEMPORARIO','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,3,'APISERVIDORTEMPORARIO','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,3,'APISERVIDORTEMPORARIO','SERVICES_BASE_PATH','').
+pgm_prop_i(svcgrp,5,'APIUNIDADE','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,5,'APIUNIDADE','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,5,'APIUNIDADE','SERVICES_BASE_PATH','').
+pgm_prop_i(svcgrp,7,'APIAUTH','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,7,'APIAUTH','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,7,'APIAUTH','SERVICES_BASE_PATH','').
+pgm_prop_i(svcgrp,9,'APIFOTOPESSOA','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,9,'APIFOTOPESSOA','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,9,'APIFOTOPESSOA','SERVICES_BASE_PATH','APIFotoPessoa').
+pgm_prop_i(svcgrp,8,'APICONSULTA','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,8,'APICONSULTA','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,8,'APICONSULTA','SERVICES_BASE_PATH',consulta).
+pgm_prop_i(svcgrp,11,'APIVARIAVEL','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,11,'APIVARIAVEL','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,11,'APIVARIAVEL','SERVICES_BASE_PATH','APIVariavel').
+pgm_prop_i(svcgrp,13,'APIUPLOAD','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,13,'APIUPLOAD','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,13,'APIUPLOAD','SERVICES_BASE_PATH','APIUpload').
+pgm_prop_i(svcgrp,6,'APILOTACAO','GENERATE_REST_API','-1').
+pgm_prop_i(svcgrp,6,'APILOTACAO','GENERATE_GRPC_API','0').
+pgm_prop_i(svcgrp,6,'APILOTACAO','SERVICES_BASE_PATH','').
+ 
+model_wrkinfo_i([ 'Java','JavaPostgreSQL002' ]).
+ 
+model_info_i([ 'Design','JavaPostgreSQL002',1 ]).
+ 
+datastore_i(1,'DS_LAST_CHANGE','').
+datastore_i(1,'LOCK_RETRY','10').
+datastore_i(1,'WAIT_RECORD','0').
+datastore_i(1,'POSTGRESQL_EXTENSIONS','').
+datastore_i(1,'POSTGRESQL_VERSION','8_3').
+datastore_i(1,'COMMENT_ON','No').
+datastore_i(1,'DCL_REF_INT_DB','Yes').
+datastore_i(1,'PRIMARY_KEY_TYPE','PK').
+datastore_i(1,'CS_SCHEMA','').
+datastore_i(1,'RecycleRWMin','30').
+datastore_i(1,'RecycleRWType','1').
+datastore_i(1,'RecycleRW','-1').
+datastore_i(1,'POOL_STARTUP','No').
+datastore_i(1,'POOLSIZE_RW','10').
+datastore_i(1,'UnlimitedRWPool','-1').
+datastore_i(1,'PoolRWEnabled','-1').
+datastore_i(1,'CS_RPCPGML','').
+datastore_i(1,'DS_READ_REPLICA','No').
+datastore_i(1,'JDBC_DATASOURCE','').
+datastore_i(1,'USE_JDBC_DATASOURCE','0').
+datastore_i(1,'DS_DBMS_ADDINFO','').
+datastore_i(1,'USER_PASSWORD',root).
+datastore_i(1,'USER_ID',postgres).
+datastore_i(1,'CS_CNTDLG','2').
+datastore_i(1,'CS_CONNECT','First').
+datastore_i(1,'DBMS_PORT','4555').
+datastore_i(1,'CS_SERVER','192.168.68.113').
+datastore_i(1,'CS_DBNAME',projetoPraticoDB).
+datastore_i(1,'CS_FLEDSNAME','').
+datastore_i(1,'CS_DRVNAME','').
+datastore_i(1,'CS_DSNAME','').
+datastore_i(1,'DB_URL','').
+datastore_i(1,'JDBC_CUSTOM_URL','0').
+datastore_i(1,'JDBC_CUSTOM_DRIVER','').
+datastore_i(1,'JDBC_DRIVER','org.postgresql.Driver').
+datastore_i(1,'CONNECT_METHOD','OPSYS').
+datastore_i(1,'ACCESS_TECHNO','JDBC').
+datastore_i(1,'MAIN_DS','-1').
+datastore_i(1,'REORG_GEN','8').
+datastore_i(1,'HelpKeyword','15').
+datastore_i(1,'DBMS',15).
+datastore_i(1,'NAME','Default').
+ 
+ 
+ 
+culture_id_i(eng).
+ 
+lng_i(1,[ 'English','English',eng ]).
+ 
+lng_prop_i(1,'IsRightToLeft','0',d).
+lng_prop_i(1,'ISOLangCode','EN',v).
+lng_prop_i(1,'ISOCountryCode','US',v).
+lng_prop_i(1,'Codepage','1252',v).
+lng_prop_i(1,'LanguageLocalization','',d).
+lng_prop_i(1,'LangDateFormat','ENG',v).
+lng_prop_i(1,'LangTimeFormat','12',v).
+lng_prop_i(1,'LangDecimalPoint','.',v).
+lng_prop_i(1,'FullyQualifiedName','English',d).
+ 
+ver_stamp('20250331.010406').
+ 
+ver_stamp(date(2025,4,2),time(21,39,5,29)).
+ 

@@ -1,0 +1,28 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIConsulta",
+"BasePath":"consulta",
+"Mappings":
+[
+{
+"Verb":"GET",
+"Name":"efetivosunidade",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_efetivosunidade",
+"Implementation":"PEfetivosUnidade",
+"PathRegexp":"efetivosunidade",
+"Path":"efetivosunidade"
+
+},
+{
+"Verb":"GET",
+"Name":"enderecofuncional",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_enderecofuncional",
+"Implementation":"PConsultaEnderecoFuncional",
+"PathRegexp":"enderecofuncional",
+"Path":"enderecofuncional"
+
+}]}

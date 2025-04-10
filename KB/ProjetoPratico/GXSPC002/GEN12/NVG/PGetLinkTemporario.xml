@@ -1,0 +1,32 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_10-184260</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>101</ObjId>
+<ObjName>PGetLinkTemporario</ObjName>
+<ObjDesc>PGet Link Temporario</ObjDesc>
+<ObjPgmName>PGetLinkTemporario</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>12</GenId>
+<GenName>Default (Java)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Imageuri</VarId>
+<VarName>&amp;ImageUri</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Geradoimageuri</VarId>
+<VarName>&amp;GeradoImageUri</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

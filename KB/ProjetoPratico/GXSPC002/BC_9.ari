@@ -1,0 +1,7 @@
+bc_dt_elem_i([ 0,9,0 ],'Lot_id',allownulls,no).
+bc_dt_elem_i([ 0,9,0 ],'Pes_id',allownulls,no).
+bc_dt_elem_i([ 0,9,0 ],'Unid_id',allownulls,no).
+bc_dt_elem_i([ 0,9,0 ],'Lot_data_lotacao',allownulls,no).
+bc_dt_elem_i([ 0,9,0 ],'Lot_data_remocao',allownulls,no).
+bc_dt_elem_i([ 0,9,0 ],'Lot_portaria',allownulls,no).
+ 

@@ -1,0 +1,28 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_10-184260</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>113</ObjId>
+<ObjName>PStorageProvider</ObjName>
+<ObjDesc>PStorage Provider</ObjDesc>
+<ObjPgmName>PStorageProvider</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0087</MsgCode>
+<Message>
+<Token></Token>
+<Token>Java</Token>
+<Token> language statements are used in this object.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>12</GenId>
+<GenName>Default (Java)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<Levels></Levels></ObjectSpec>

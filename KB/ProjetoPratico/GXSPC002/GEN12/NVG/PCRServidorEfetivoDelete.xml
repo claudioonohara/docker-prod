@@ -1,0 +1,70 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_10-184260</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>97</ObjId>
+<ObjName>PCRServidorEfetivoDelete</ObjName>
+<ObjDesc>PCRServidor Efetivo Delete</ObjDesc>
+<ObjPgmName>PCRServidorEfetivoDelete</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0022</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>2</Line></Location>
+<Message>
+<Token>Input-only parameter </Token>
+<Variable>
+<VarId>Se_matricula</VarId>
+<VarName>&amp;se_matricula</VarName></Variable>
+<Token> should not be assigned.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0022</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>2</Line></Location>
+<Message>
+<Token>Input-only parameter </Token>
+<Variable>
+<VarId>Pes_id</VarId>
+<VarName>&amp;pes_id</VarName></Variable>
+<Token> should not be assigned.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>11</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>PDesvinculaPessoaEndereco</Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>12</GenId>
+<GenName>Default (Java)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Pes_id</VarId>
+<VarName>&amp;pes_id</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Se_matricula</VarId>
+<VarName>&amp;se_matricula</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Messages</VarId>
+<VarName>&amp;Messages</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

@@ -1,0 +1,352 @@
+openapi: 3.0.0
+info:
+  title: "APIServidorTemporario"
+  description: "APIServidor Temporario"
+  version: "20250409220308"
+servers:
+  - url: http://localhost:8080/ProjetoPraticoJavaPostgreSQL/
+paths:
+  /servidorTemporario:
+    post:
+      tags:
+        - APIServidorTemporario  
+      operationId: "APIServidorTemporario.servidorTemporario__post"
+      summary: "servidorTemporario__post"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorTemporario__postInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorTemporario__postOutput"
+        404:
+          description: "Not found"
+
+  /servidorTemporario/{pes_id}/{st_data_admissao}/{st_data_demissao}:
+    put:
+      tags:
+        - APIServidorTemporario  
+      operationId: "APIServidorTemporario.servidorTemporario__put"
+      summary: "servidorTemporario__put"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "st_data_admissao"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "date"
+        - name: "st_data_demissao"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "date"
+
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/servidorTemporario__putInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorTemporario__putOutput"
+        404:
+          description: "Not found"
+
+
+    delete:
+      tags:
+        - APIServidorTemporario  
+      operationId: "APIServidorTemporario.servidorTemporario__delete"
+      summary: "servidorTemporario__delete"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "st_data_admissao"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "date"
+        - name: "st_data_demissao"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "date"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GeneXus.Common.Messages_Message"  
+
+        404:
+          description: "Not found"
+
+    get:
+      tags:
+        - APIServidorTemporario  
+      operationId: "APIServidorTemporario.servidorTemporario__get"
+      summary: "servidorTemporario__get"
+      parameters:
+        - name: "pes_id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+        - name: "st_data_admissao"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "date"
+        - name: "st_data_demissao"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "date"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/servidorTemporario__getOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    servidorTemporario__postOutput:
+      properties:
+        RetornoSDTCRServidorTemporario:
+          description: "SDTCRServidor Temporario"
+          $ref: "#/components/schemas/SDTCRServidorTemporario"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorTemporario__putOutput:
+      properties:
+        RetornoSDTCRServidorTemporario:
+          description: "SDTCRServidor Temporario"
+          $ref: "#/components/schemas/SDTCRServidorTemporario"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+
+    servidorTemporario__getOutput:
+      properties:
+        RetornoSDTCRServidorTemporario:
+          description: "SDTCRServidor Temporario"
+          $ref: "#/components/schemas/SDTCRServidorTemporario"
+        Messages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+
+    servidorTemporario__postInput:  
+      properties:
+        SDTCRServidorTemporario:
+          description: "SDTCRServidor Temporario"
+          $ref: "#/components/schemas/SDTCRServidorTemporario"
+
+    servidorTemporario__putInput:  
+      properties:
+        SDTCRServidorTemporarioAtualiza:
+          description: "SDTCRServidor Temporario Atualiza"
+          $ref: "#/components/schemas/SDTCRServidorTemporarioAtualiza"
+
+
+  
+    SDTCRServidorTemporario:
+      properties:
+        pes_id:
+          description: "pes_id"
+          type: "integer"
+          format: "int64"
+        st_data_admissao:
+          description: "st_data_admissao"
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          description: "st_data_demissao"
+          type: "string"
+          format: "date"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorTemporario.endereco_enderecoItem"
+
+
+    SDTCRServidorTemporario.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+
+
+      x-gx-level: "SDTCRServidorTemporario"
+
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+
+
+
+    SDTCRServidorTemporarioAtualiza:
+      properties:
+        st_data_admissao:
+          description: "st_data_admissao"
+          type: "string"
+          format: "date"
+        st_data_demissao:
+          description: "st_data_demissao"
+          type: "string"
+          format: "date"
+        pes_nome:
+          description: "pes_nome"
+          type: "string"
+        pes_data_nascimento:
+          description: "pes_data_nascimento"
+          type: "string"
+          format: "date"
+        pes_sexo:
+          description: "pes_sexo"
+          type: "string"
+        pes_mae:
+          description: "pes_mae"
+          type: "string"
+        pes_pai:
+          description: "pes_pai"
+          type: "string"
+
+        endereco:
+          type: array
+          items:
+            description: enderecoItem
+            $ref: "#/components/schemas/SDTCRServidorTemporarioAtualiza.endereco_enderecoItem"
+
+
+    SDTCRServidorTemporarioAtualiza.endereco_enderecoItem:
+      properties:
+        end_id:
+          description: "end_id"
+          type: "integer"
+          format: "int64"
+        end_tipo_logradouro:
+          description: "end_tipo_logradouro"
+          type: "string"
+        end_logradouro:
+          description: "end_logradouro"
+          type: "string"
+        end_numero:
+          description: "end_numero"
+          type: "integer"
+          format: "int64"
+        end_bairro:
+          description: "end_bairro"
+          type: "string"
+        cid_id:
+          description: "cid_id"
+          type: "integer"
+          format: "int64"
+        cid_nome:
+          description: "cid_nome"
+          type: "string"
+        cid_uf:
+          description: "cid_uf"
+          type: "string"
+
+
+      x-gx-level: "SDTCRServidorTemporarioAtualiza"
+
+ 

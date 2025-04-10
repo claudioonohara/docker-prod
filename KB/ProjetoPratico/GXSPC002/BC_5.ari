@@ -1,0 +1,7 @@
+bc_dt_elem_i([ 0,5,0 ],'End_id',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'End_tipo_logradouro',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'End_logradouro',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'End_numero',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'End_bairro',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Cid_id',allownulls,no).
+ 

@@ -1,0 +1,345 @@
+spec_i([ proc,50,'PBusca Endereco','PBuscaEndereco',78,eng,'18_0_10-184260' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 5,[ [ 5,many ] ],[],[],[ [ [ 5 ],[ 17,18,19,20,21,14 ] ] ],[ [ [ 5 ],[] ] ],[ 17 ],'IENDERECO',[ 5,[ [ [],'End_id',17 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 5,17 ],[ 5,18 ],[ 5,19 ],[ 5,20 ],[ 5,21 ],[ 5,14 ] ] ]).
+ 
+las_i(2,[ [ 17,18,19,20,21,14 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'POSTGRESQL_EXTENSIONS','')).
+rule_i(0,datastore(1,'POSTGRESQL_VERSION','8_3')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'DS_READ_REPLICA','No')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD',root)).
+rule_i(0,datastore(1,'USER_ID',postgres)).
+rule_i(0,datastore(1,'CS_CNTDLG','2')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','4555')).
+rule_i(0,datastore(1,'CS_SERVER','192.168.68.113')).
+rule_i(0,datastore(1,'CS_DBNAME',projetoPraticoDB)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','org.postgresql.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','JDBC')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','15')).
+rule_i(0,datastore(1,'DBMS',15)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop(gxtest_ignoreForTestCoverage,'0')).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','KnowledgeBase')).
+rule_i(0,prop('FullyQualifiedName','PBuscaEndereco')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,'ProjetoPratico'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','PBusca Endereco')).
+rule_i(0,prop('ObjName','PBuscaEndereco')).
+rule_i(0,maingen(12)).
+rule_i(0,parm([ 'End_id','Encontrado_end_id','End_tipo_logradouro','End_logradouro','End_numero','End_bairro','Cid_id' ],[])).
+rule_i(0,parmio([ [ 'End_id',inout ],[ 'Encontrado_end_id',inout ],[ 'End_tipo_logradouro',inout ],[ 'End_logradouro',inout ],[ 'End_numero',inout ],[ 'End_bairro',inout ],[ 'Cid_id',inout ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,2,t,5,[],[ [ [ [],'End_id',17 ] ],'IENDERECO',[] ]).
+ 
+v_i(t,i,1,'End_id').
+v_i(t,o,1,17).
+v_i(t,o,1,18).
+v_i(t,o,1,19).
+v_i(t,o,1,20).
+v_i(t,o,1,21).
+v_i(t,o,1,14).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',16 ]).
+attri_i(17,[ end_id,int,8,0,'ZZZZZZZ9',0,end_id,'',0 ]).
+attri_i(18,[ end_tipo_logradouro,svchar,50,0,'',0,end_tipo_logradouro,'',0 ]).
+attri_i(19,[ end_logradouro,svchar,200,0,'',0,end_logradouro,'',0 ]).
+attri_i(20,[ end_numero,int,8,0,'ZZZZZZZ9',0,end_numero,'',0 ]).
+attri_i(21,[ end_bairro,svchar,100,0,'',0,end_bairro,'',0 ]).
+attri_i(14,[ cid_id,int,8,0,'ZZZZZZZ9',0,cid_id,'',0 ]).
+attri_i('End_numero',[ end_numero,int,8,0,'ZZZZZZZ9',0,end_numero,'',14 ]).
+attri_i('End_bairro',[ end_bairro,svchar,100,0,'',0,end_bairro,'',13 ]).
+attri_i('Cid_id',[ cid_id,int,8,0,'ZZZZZZZ9',0,cid_id,'',12 ]).
+attri_i('End_logradouro',[ end_logradouro,svchar,200,0,'',0,end_logradouro,'',11 ]).
+attri_i('End_tipo_logradouro',[ end_tipo_logradouro,svchar,50,0,'',0,end_tipo_logradouro,'',10 ]).
+attri_i('Encontrado_end_id',[ encontrado_end_id,int,4,0,'ZZZ9',0,encontrado_end_id,'',9 ]).
+attri_i('End_id',[ end_id,int,8,0,'ZZZZZZZ9',0,end_id,'',8 ]).
+ 
+table_i(5,[ endereco,[ 17,18,19,20,21,14 ],endereco,endereco ]).
+ 
+index_i(5,[ 'IENDERECO',u,[ 17 ],'Iendereco' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 17,23,'End_id',= ] ],one ]).
+ 
+end_i(2,0,0,[ [ [ t(17,2),t(=,10),t('End_id',23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [ 14,21,20,19,18,17 ],[ 17 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,1,1).
+b_group_i(2,1,lit,0,2,2).
+b_group_i(1,3,lit,0,10,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,2,1,cmd,2,[ t('',121,1,0),t(table,3,1,10),t(5,3,1,10) ]).
+b_line_i(3,2,1,cmd,2,[ t('',107,3,0),t('Encontrado_end_id',23,2,0),t(=,10,2,0),t(17,2,2,0) ]).
+b_line_i(4,2,1,cmd,2,[ t('',107,4,0),t('End_tipo_logradouro',23,2,0),t(=,10,2,0),t(18,2,2,0) ]).
+b_line_i(5,2,1,cmd,2,[ t('',107,5,0),t('End_logradouro',23,2,0),t(=,10,2,0),t(19,2,2,0) ]).
+b_line_i(6,2,1,cmd,2,[ t('',107,6,0),t('End_numero',23,2,0),t(=,10,2,0),t(20,2,2,0) ]).
+b_line_i(7,2,1,cmd,2,[ t('',107,7,0),t('End_bairro',23,2,0),t(=,10,2,0),t(21,2,2,0) ]).
+b_line_i(8,2,1,cmd,2,[ t('',107,8,0),t('Cid_id',23,2,0),t(=,10,2,0),t(14,2,2,0) ]).
+b_line_i(9,2,1,cmd,2,[ t('',128,9,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(42,5).
+ 
+att_prop_i(2,14,'ExternalName',cid_id,d).
+att_prop_i(2,14,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,14,'EmptyAsNull','Yes',d).
+att_prop_i(2,14,idBasedOn,'',d).
+att_prop_i(2,14,'AUTONUMBER','-1',v).
+att_prop_i(2,14,'AUTONUMBER_START','1',d).
+att_prop_i(2,14,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,14,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,14,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,14,'AttRegEx','',d).
+att_prop_i(2,14,'AttValidationFailedMsg','',d).
+att_prop_i(2,14,'DownloadOffline','0',d).
+att_prop_i(2,14,'VarServiceExtName','',d).
+att_prop_i(2,14,'FullName',cid_id,v).
+att_prop_i(2,21,'ExternalName',end_bairro,d).
+att_prop_i(2,21,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,21,'EmptyAsNull','Yes',d).
+att_prop_i(2,21,idBasedOn,'',d).
+att_prop_i(2,21,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,21,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,21,'AttRegEx','',d).
+att_prop_i(2,21,'AttValidationFailedMsg','',d).
+att_prop_i(2,21,'DownloadOffline','0',d).
+att_prop_i(2,21,'VarServiceExtName','',d).
+att_prop_i(2,21,'FullName',end_bairro,v).
+att_prop_i(2,20,'ExternalName',end_numero,d).
+att_prop_i(2,20,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,20,'EmptyAsNull','Yes',d).
+att_prop_i(2,20,idBasedOn,'',d).
+att_prop_i(2,20,'AUTONUMBER','0',d).
+att_prop_i(2,20,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,20,'AttRegEx','',d).
+att_prop_i(2,20,'AttValidationFailedMsg','',d).
+att_prop_i(2,20,'DownloadOffline','0',d).
+att_prop_i(2,20,'VarServiceExtName','',d).
+att_prop_i(2,20,'FullName',end_numero,v).
+att_prop_i(2,19,'ExternalName',end_logradouro,d).
+att_prop_i(2,19,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,19,'EmptyAsNull','Yes',d).
+att_prop_i(2,19,idBasedOn,'',d).
+att_prop_i(2,19,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,19,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,19,'AttRegEx','',d).
+att_prop_i(2,19,'AttValidationFailedMsg','',d).
+att_prop_i(2,19,'DownloadOffline','0',d).
+att_prop_i(2,19,'VarServiceExtName','',d).
+att_prop_i(2,19,'FullName',end_logradouro,v).
+att_prop_i(2,18,'ExternalName',end_tipo_logradouro,d).
+att_prop_i(2,18,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,18,'EmptyAsNull','Yes',d).
+att_prop_i(2,18,idBasedOn,'',d).
+att_prop_i(2,18,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,18,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,18,'AttRegEx','',d).
+att_prop_i(2,18,'AttValidationFailedMsg','',d).
+att_prop_i(2,18,'DownloadOffline','0',d).
+att_prop_i(2,18,'VarServiceExtName','',d).
+att_prop_i(2,18,'FullName',end_tipo_logradouro,v).
+att_prop_i(2,17,'ExternalName',end_id,d).
+att_prop_i(2,17,'ExternalNamespace','ProjetoPratico',d).
+att_prop_i(2,17,'EmptyAsNull','Yes',d).
+att_prop_i(2,17,idBasedOn,'',d).
+att_prop_i(2,17,'AUTONUMBER','-1',v).
+att_prop_i(2,17,'AUTONUMBER_START','1',d).
+att_prop_i(2,17,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,17,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,17,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,17,'AttRegEx','',d).
+att_prop_i(2,17,'AttValidationFailedMsg','',d).
+att_prop_i(2,17,'DownloadOffline','0',d).
+att_prop_i(2,17,'VarServiceExtName','',d).
+att_prop_i(2,17,'FullName',end_id,v).
+ 
+ 
+tbl_att_prop_i(2,5,17,'AllowNulls',n).
+tbl_att_prop_i(2,5,17,'AUTONUMBER',y).
+tbl_att_prop_i(2,5,18,'AllowNulls',n).
+tbl_att_prop_i(2,5,19,'AllowNulls',n).
+tbl_att_prop_i(2,5,20,'AllowNulls',n).
+tbl_att_prop_i(2,5,21,'AllowNulls',n).
+tbl_att_prop_i(2,5,14,'AllowNulls',n).
+ 
+var_prop_i(2,'End_id',idBasedOn,'',v).
+var_prop_i(2,'End_tipo_logradouro',idBasedOn,'',v).
+var_prop_i(2,'End_logradouro',idBasedOn,'',v).
+var_prop_i(2,'Cid_id',idBasedOn,'',v).
+var_prop_i(2,'End_bairro',idBasedOn,'',v).
+var_prop_i(2,'End_numero',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,50,'PBUSCAENDERECO','INTERNAL','Secure').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,17 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIVariavel",
+"BasePath":"APIVariavel",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"variavel",
+"Bodystyle":"Wrapped",
+"VariableAlias": [],
+"ServiceMethod":"gxep_variavel",
+"Implementation":"PVariavel",
+"PathRegexp":"variavel",
+"Path":"variavel"
+
+}]}
